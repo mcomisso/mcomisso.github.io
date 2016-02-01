@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>{{ page.title }}</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Material design lite by Google. See it here: https://www.getmdl.io -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.1.0/material.min.js"></script>
+
+    <!-- Font Awesome! https://fortawesome.github.io -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Custom css -->
     <link href="/css/main.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      {{ content }}
+    <div class="header-picture mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">{{page.title}}</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="/">Home</a>
+            <a class="mdl-navigation__link" href="/projects">Hobby Projects</a>
+            <a class="mdl-navigation__link" href="/cv">Personal CV</a>
+            <a class="mdl-navigation__link" href="/about">About</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="/">Home</a>
+        <a class="mdl-navigation__link" href="/projects">Hobby Projects</a>
+        <a class="mdl-navigation__link" href="/cv">Personal CV</a>
+        <a class="mdl-navigation__link" href="/about">About</a>
+      </nav>
+
+      <!-- Insert latest posts -->
     </div>
-      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />Quest'opera è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale</a>.
+
+    <!-- MAIN CONTENT -->
+    <main class="mdl-layout__content">
+      {{content}}
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mdl-mini-footer">
+      <div class="mdl-mini-footer__left-section">
+        <div class="mdl-logo">{{page.title}}</div>
+        <ul class="mdl-mini-footer__link-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects">Hobby Projects</a></li>
+          <li><a href="/cv">Personal CV</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </div>
+      <div class="mdl-mini-footer__right_section">
+        With love from <i class="fa fa-github"></i>
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />Quest'opera è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"></a>.
+      </div>
+    </footer>
+    </div>
   </body>
 </html>
