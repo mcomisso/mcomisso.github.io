@@ -1,0 +1,12 @@
+html {
+
+}
+
+body {
+  /*background-color: #cecece;*/
+}
+
+.header-picture {
+
+  background: url('/images/background.jpg') center/cover;
+}
