@@ -7,5 +7,6 @@ body {
 }
 
 .header-picture {
+
   background: url('/images/background.jpg') center/cover;
 }
