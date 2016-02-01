@@ -3,5 +3,9 @@ html {
 }
 
 body {
-  background-color: #ccc;
+  /*background-color: #cecece;*/
+}
+
+.header-picture {
+  background: url('/images/background.jpg') center/cover;
 }
