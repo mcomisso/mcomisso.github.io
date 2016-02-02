@@ -3,3 +3,4 @@ gems:
   - emoji_for_jekyll
 
 permalink: /blog/:year/:month/:day/:title
+language: en
