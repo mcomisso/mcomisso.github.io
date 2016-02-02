@@ -38,22 +38,7 @@
       {{content}}
     </main>
 
-    <!-- FOOTER -->
-    <footer class="mdl-mini-footer">
-      <div class="mdl-mini-footer__left-section">
-        <div class="mdl-logo">{{page.title}}</div>
-        <ul class="mdl-mini-footer__link-list">
-          <li><a href="/">Home</a></li>
-          <li><a href="/projects">Hobby Projects</a></li>
-          <li><a href="/cv">Personal CV</a></li>
-          <li><a href="/about">About</a></li>
-        </ul>
-      </div>
-      <div class="mdl-mini-footer__right_section">
-        With love from <i class="fa fa-github"></i>
-        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />Quest'opera è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"></a>.
-      </div>
-    </footer>
+    {% include footer.html %}
     </div>
 
     {% include scripts.html %}
