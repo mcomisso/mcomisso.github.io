@@ -7,11 +7,18 @@
   </head>
   <body>
     <div class="header-picture mdl-layout mdl-js-layout">
-      {%include menu.html %}
+      {%include header.html %}
 
     <!-- MAIN CONTENT -->
     <main class="mdl-layout__content">
-      {{content}}
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--2-col"></div>
+        <div class="mdl-cell mdl-cell--8-col">
+          {{content}}
+        </div>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+      </div>
+
     </main>
 
     {% include footer.html %}
