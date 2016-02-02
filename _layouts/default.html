@@ -2,26 +2,8 @@
 <html>
   <head>
     <title>{{ page.title }}</title>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
-
-    <!-- Material design lite by Google. See it here: https://www.getmdl.io -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.1.0/material.indigo-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.1.0/material.min.js"></script>
-
-    <!-- Font Awesome! https://fortawesome.github.io -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    <!-- Custom css -->
-    <link href="/css/main.css" type="text/css" rel="stylesheet">
+    {% include meta.html %}
+    {% include styles.html %}
   </head>
   <body>
     <div class="header-picture mdl-layout mdl-js-layout">
@@ -73,5 +55,7 @@
       </div>
     </footer>
     </div>
+
+    {% include scripts.html %}
   </body>
 </html>
