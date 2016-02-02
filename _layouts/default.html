@@ -7,36 +7,7 @@
   </head>
   <body>
     <div class="header-picture mdl-layout mdl-js-layout">
-      <header class="mdl-layout__header mdl-layout__header--transparent">
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">{{page.title}}</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
-          <!-- Navigation -->
-          <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="/">Home</a>
-            <a class="mdl-navigation__link" href="/projects">Hobby Projects</a>
-            <a class="mdl-navigation__link" href="/cv">Personal CV</a>
-            <a class="mdl-navigation__link" href="/about">About</a>
-          </nav>
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-            <span><i class="fa fa-github-square"></i> Github</span>
-          </button>
-        </div>
-      </header>
-      <div class="mdl-layout__drawer">
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="/"><i class="material-icons">home</i> Home</a>
-        <a class="mdl-navigation__link" href="/projects">Hobby Projects</a>
-        <a class="mdl-navigation__link" href="/cv"><i class="material-icons">work</i> Personal CV</a>
-        <a class="mdl-navigation__link" href="/about">About</a>
-        <a class="mdl-navigation__link" href="/blog"><i class="material-icons">book</i> Blog</a>
-
-      </nav>
-
-      <!-- Insert latest posts -->
-    </div>
+      {%include menu.html %}
 
     <!-- MAIN CONTENT -->
     <main class="mdl-layout__content">
