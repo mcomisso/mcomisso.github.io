@@ -6,7 +6,12 @@ body {
   background-color: #cecece;
 }
 
-.header-picture {
+.separator {
+  height: 10vh;
+  width: 100%;
+  background-color: indigo;
+}
 
+.header-picture {
   /*background: url('/images/background.jpg') center/cover;*/
 }
