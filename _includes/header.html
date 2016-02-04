@@ -12,12 +12,22 @@
     <button onclick="window.location.href='https://github.com/mcomisso'" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
       <span><i class="fa fa-github-square"></i> Github</span>
     </button>
+
   </div>
 </header>
 <div class="mdl-layout__drawer">
 <nav class="mdl-navigation">
   {% include menu.html %}
   <a class="mdl-navigation__link" href="/blog"><i class="material-icons">book</i> Blog</a>
+  <span>
+    Latest posts
+  </span>
+  <ul>
+    {% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
 
 </nav>
 
