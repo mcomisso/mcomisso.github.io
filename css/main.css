@@ -1,8 +1,10 @@
-html {
-
-}
+/*CSS SET*/
 
 body {
+  background-color: indigo;
+}
+
+main {
   background-color: #cecece;
 }
 
