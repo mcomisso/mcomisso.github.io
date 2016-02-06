@@ -12,10 +12,18 @@
     <!-- MAIN CONTENT -->
     <main class="mdl-layout__content">
       <div class="separator"></div>
-      <div class="mdl-grid">
+      <div class="mdl-grid negative-top">
         <div class="mdl-cell mdl-cell--2-col"></div>
         <div class="mdl-cell mdl-cell--8-col">
-          {{content}}
+          <div class="mdl-card mdl-cell--12-col mdl-shadow--2dp">
+            <div class="mdl-grid">
+              <div class="mdl-cell--2-col"></div>
+              <div class="mdl-cell--8-col">
+                {{content}}
+              </div>
+              <div class="mdl-cell--2-col"></div>
+            </div>
+          </div>
         </div>
         <div class="mdl-cell mdl-cell--2-col"></div>
       </div>
