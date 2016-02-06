@@ -8,6 +8,10 @@ main {
   background-color: #cecece;
 }
 
+.negative-top {
+  margin-top: -50px;
+}
+
 .separator {
   height: 10vh;
   width: 100%;
