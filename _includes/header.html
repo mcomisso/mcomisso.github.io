@@ -19,15 +19,24 @@
 <nav class="mdl-navigation">
   {% include menu.html %}
   <a class="mdl-navigation__link" href="/blog"><i class="material-icons">book</i> Blog</a>
-  <span>
-    Latest posts
-  </span>
-  <ul>
+  <ul class="mdl-list">
+    <li class="mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+        Latest posts
+      </span>
+    </li>
+    <!-- Loop for latest posts -->
     {% for post in site.posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li class="mdl-list__item">
+      <a href="{{ post.url }}">
+        <span class="mdl-list__item-primary-content">
+          <i class="material-icons mdl-list__item-icon">person</i>
+          {{ post.title }}
+        </span>
+      </a>
+    </li>
     {% endfor %}
   </ul>
-
 
 </nav>
 
