@@ -1,11 +1,16 @@
 /*CSS SET*/
 
 body {
-  background-color: indigo;
+  background-color: rgb(0, 150, 136);
 }
 
 main {
   background-color: #cecece;
+}
+
+.mdl-mini-footer {
+  background-color: tomato;
+  padding: 0px 16px;
 }
 
 .negative-top {
@@ -15,7 +20,7 @@ main {
 .separator {
   height: 10vh;
   width: 100%;
-  background-color: indigo;
+  background-color: rgb(0, 150, 136);
 }
 
 .header-picture {
