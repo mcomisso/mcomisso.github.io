@@ -1,15 +1,14 @@
 /*CSS SET*/
 
 body {
-  background-color: rgb(0, 150, 136);
+
 }
 
 main {
-  background-color: #cecece;
+  background-color: #ebeceb;
 }
 
 .mdl-mini-footer {
-  background-color: tomato;
   padding: 0px 16px;
 }
 
@@ -20,7 +19,6 @@ main {
 .separator {
   height: 10vh;
   width: 100%;
-  background-color: rgb(0, 150, 136);
 }
 
 .header-picture {
