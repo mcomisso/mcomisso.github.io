@@ -6,7 +6,11 @@ layout: default
 <div class="mdl-grid">
   <div class="mdl-cell mdl-cell--2-col"></div>
   <div class="mdl-cell mdl-cell--8-col">
-    {{ content }}
+    <div class="mdl-card max-width mdl-shadow--2dp">
+      <div class="mdl-card__supporting-text">
+      {{ content }}
+      </div>
+    </div>
   </div>
 </div>
 {% include disqus.html %}

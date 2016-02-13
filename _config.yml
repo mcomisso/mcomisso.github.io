@@ -1,6 +1,18 @@
 gems:
   - jekyll-sitemap
   - emoji_for_jekyll
+  - kramdown
 
-permalink: /blog/:year/:month/:day/:title
+permalink: /blog/:year/:month/:title
 language: en
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+highlighter: rouge
+
+version:
+  maj: 0
+  min: 0
+  build: 1

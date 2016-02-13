@@ -1,0 +1,25 @@
+<div class="mdl-layout__drawer">
+<nav class="mdl-navigation">
+  {% include menu.html %}
+  <ul class="mdl-list">
+    <li class="mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+        Latest posts
+      </span>
+    </li>
+    <!-- Loop for latest posts -->
+    {% for post in site.posts %}
+    <li class="mdl-list__item">
+      <span class="post-date">{{ post.date | date_to_string }}</span>
+      <a href="{{ post.url }}">
+        <span class="mdl-list__item-primary-content">
+          {{ post.title }}
+        </span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+
+</nav>
+<!-- Insert latest posts -->
+</div>

@@ -4,7 +4,9 @@ title: Home automation with Raspberry Pi
 description: This is the first post!
 ---
 
-I ordered a Raspberry Pi model B a lot of time ago, and I always used it as home server/media center. I wanted to try something new.
+I ordered a Raspberry Pi model B a lot of time ago, and I always used it as home server/media center. What about trying something new?
+
+If you don't know where to start, take a look here: []
 
 Alarm
 -----
@@ -27,14 +29,13 @@ Edit the password for `pi` account
 $ sudo passwd pi
 Insert new UNIX password:
 ```
-
-
 Install dependencies
+~~~~~
+asd
 
-```
+
 sudo apt-get install
-```
-
+~~~~~
 #### Workers
 
 ```

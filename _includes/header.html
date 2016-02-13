@@ -9,35 +9,11 @@
       {% include menu.html %}
     </nav>
 
-    <button onclick="window.location.href='https://github.com/mcomisso'" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
+    <button onclick="window.location.href='https://github.com/mcomisso/mcomisso.github.io'" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
       <span><i class="fa fa-github-square"></i> Github</span>
     </button>
 
   </div>
 </header>
-<div class="mdl-layout__drawer">
-<nav class="mdl-navigation">
-  {% include menu.html %}
-  <ul class="mdl-list">
-    <li class="mdl-list__item">
-      <span class="mdl-list__item-primary-content">
-        Latest posts
-      </span>
-    </li>
-    <!-- Loop for latest posts -->
-    {% for post in site.posts %}
-    <li class="mdl-list__item">
-      <a href="{{ post.url }}">
-        <span class="mdl-list__item-primary-content">
-          <i class="material-icons mdl-list__item-icon">person</i>
-          {{ post.title }}
-        </span>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
 
-</nav>
-
-<!-- Insert latest posts -->
-</div>
+{% include sidebar.html %}
