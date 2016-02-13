@@ -1,5 +1,5 @@
 /*CSS SET*/
-
+/* GENERIC */
 body {
 
 }
@@ -21,8 +21,12 @@ main {
   width: 100%;
 }
 
-.header-picture {
-  /*background: url('/images/background.jpg') center/cover;*/
+/*
+  HOME
+*/
+
+#card_home {
+  background: url('/images/home_abstract.png') center/cover;
 }
 
 /*
