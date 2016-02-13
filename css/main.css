@@ -24,3 +24,27 @@ main {
 .header-picture {
   /*background: url('/images/background.jpg') center/cover;*/
 }
+
+/*
+  POST
+*/
+
+.post-margin {
+  margin-bottom: 20px;
+}
+
+.post-date {
+  font-size: 0.8em;
+}
+
+
+/*
+  ABOUT
+*/
+.about-service-title {
+  vertical-align: top;
+}
+
+.max-width {
+  width: 100%;
+}

@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
+<!-- <h1>{{ page.title }}</h1> -->
 
-<p class="meta"> {{page.date | date_to_string}}</p>
-<div class="post">
-  {{ content }}
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--2-col"></div>
+  <div class="mdl-cell mdl-cell--8-col">
+    {{ content }}
+  </div>
 </div>
 {% include disqus.html %}

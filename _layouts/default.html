@@ -7,27 +7,14 @@
   </head>
   <body class="mdl-color--blue-grey">
     <div class="header-picture mdl-layout mdl-js-layout">
-      {%include header.html %}
-
+    {%include header.html %}
     <!-- MAIN CONTENT -->
     <main class="mdl-layout__content">
       <div class="separator mdl-color--blue-grey"></div>
       <div class="mdl-grid negative-top">
         <div class="mdl-cell mdl-cell--2-col"></div>
-        <div class="mdl-cell mdl-cell--8-col">
-          <div class="mdl-card mdl-cell--12-col mdl-shadow--2dp">
-            <div class="mdl-grid">
-              <div class="mdl-cell--2-col"></div>
-              <div class="mdl-cell--8-col">
-                {{content}}
-              </div>
-              <div class="mdl-cell--2-col"></div>
-            </div>
-          </div>
-        </div>
-        <div class="mdl-cell mdl-cell--2-col"></div>
+        {{ content }}
       </div>
-
     </main>
 
     {% include footer.html %}
