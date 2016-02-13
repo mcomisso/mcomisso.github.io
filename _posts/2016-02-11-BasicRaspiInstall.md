@@ -34,20 +34,20 @@ The */etc/ssh/ssd_config* file contains all the configurations for the ssh daemo
     1. Do a `ssh-keygen -t rsa -b 4096` on the host machine and follow the instructions to generate a new key.  
 
     2. Copy the freshly generated public key
-    ```
+    ```bash
     (Mac OS X only)
     $ cat .ssh/id_rsa.pub | pbcopy
     ```
 
     3. Add it to the raspi authorized keys  
-    ```
+    ```bash
     (On the raspberry pi)
     $ sudo nano .ssh/authorized_keys
     *paste from clipboard the copied key*
     ```
 
     4. Edit the *sshd_config* _PasswordAuthentication_ parameter  
-    ```
+    ```bash
     (On the raspberry pi)
     $ sudo nano /etc/ssh/sshd_config
     [...]
@@ -56,7 +56,9 @@ The */etc/ssh/ssd_config* file contains all the configurations for the ssh daemo
     ```
 
     5. Restart ssh  
-    `sudo service ssh restart`
+    ```
+    sudo service ssh restart
+    ```
 
   - Change default sshd port
 

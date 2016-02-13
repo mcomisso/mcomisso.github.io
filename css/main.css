@@ -28,7 +28,6 @@ main {
 /*
   POST
 */
-
 .post-margin {
   margin-bottom: 20px;
 }
@@ -37,12 +36,11 @@ main {
   font-size: 0.8em;
 }
 
-
 /*
   ABOUT
 */
 .about-service-title {
-  vertical-align: top;
+  /*vertical-align: top;*/
 }
 
 .max-width {
