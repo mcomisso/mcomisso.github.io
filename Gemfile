@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'github-pages'
+gem 'jekyll-sitemap'
+gem 'emoji_for_jekyll'
+gem 'kramdown'
