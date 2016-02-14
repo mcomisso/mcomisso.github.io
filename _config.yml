@@ -3,9 +3,10 @@ gems:
   - emoji_for_jekyll
   - kramdown
   - jekyll-gist
+  - jekyll-paginate
   - jekyll-time-to-read
 
-permalink: /blog/:year/:month/:title
+# permalink: /blog/:year/:month/:title
 language: en
 
 markdown: kramdown
@@ -18,3 +19,6 @@ version:
   maj: 0
   min: 0
   build: 1
+
+paginate: 5
+paginate_path: "/blog/page:num/"
