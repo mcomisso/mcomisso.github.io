@@ -10,11 +10,17 @@ title: Matteo Comisso
     </div>
     <div class="mdl-card__supporting-text">
       <p>
-        This site works as a collector of ideas, a notebook, that I will (hopefully) use as self-reference in the future.
-        I love having fun with the latest technologies, mobile and web development.
+        This site works as a collector of ideas (read "notebook"), that I will (hopefully) use for reference in the future.
       </p>
       <p>
-        Feel free to clone this site (button on the top right) to see how this site is using <a href="http://jekyllrb.com/">Jekyll</a>, <a href="https://pages.github.com/">Github Pages</a> or <a href="https://www.getmdl.io/">Material Design Lite</a>. <br>
+        I love having fun with the latest technologies, mobile and web development. <br>
+        Feel free to clone this site (button on the top right) to see how this site is built using <a href="http://jekyllrb.com/">Jekyll</a>, <a href="https://pages.github.com/">Github Pages</a> or <a href="https://www.getmdl.io/">Material Design Lite</a>. <br>
+      </p>
+      <p>
+        Recently I posted something about:
+        {% assign post = site.posts | first %}
+        {{ post.tags | sort | array_to_sentence_string }}
+        <a href="{{ post.url }}">Give it a look</a>
       </p>
     </div>
     <div class="mdl-card__actions mdl-card--border">

@@ -2,6 +2,8 @@ gems:
   - jekyll-sitemap
   - emoji_for_jekyll
   - kramdown
+  - jekyll-gist
+  - jekyll-time-to-read
 
 permalink: /blog/:year/:month/:title
 language: en

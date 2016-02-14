@@ -6,6 +6,7 @@ description: Index of blog
 <!-- List of posts -->
 <div class="mdl-cell mdl-cell--8-col">
 {% for post in site.posts %}
+
   <div class="mdl-card max-width mdl-shadow--2dp post-margin">
     <div class="mdl-card__title mdl-card--expand">
       <h2 class="mdl-card__title-text">
@@ -13,7 +14,10 @@ description: Index of blog
       </h2>
     </div>
     <div class="mdl-card__supporting-text">
-      <span class="post-date">{{post.date | date_to_string}}</span>
+      <span class="post-date">{{post.date | date_to_string}} | <span id="{{ post.url | slugify }}">{{ post.content | reading_time_as_i }}</span></span>
+      <div class="mdl-tooltip" for="{{ post.url | slugify }}">
+      {{post.content | number_of_words }} words
+      </div>
       <p> {{ post.excerpt | strip_html }} </p>
     </div>
     <div class="mdl-card__actions mdl-card--border">
