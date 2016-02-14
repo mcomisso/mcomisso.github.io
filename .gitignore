@@ -1,3 +1,8 @@
+
+# Jekyll Gitignore
 _site/
 _drafts/
 .jekyll-metadata
+
+# OS X related
+.DS_Store
