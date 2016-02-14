@@ -1,13 +1,14 @@
 ##################
-# Installed gems #
+# Active plugins #
 ##################
 gems:
-  - jekyll-sitemap
-  # - jekyll-feed
-  # - jekyll-redirect-from
-  - jemoji
-  # - jekyll-gist
-  - jekyll-paginate
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
+- jekyll-feed
+
+- jekyll-paginate
 
 ############
 # Generics #
@@ -39,17 +40,11 @@ paginate: 5
 ###############
 google_analytics_id: "UA-73383879-1"
 markdown: kramdown
-# kramdown:
-#   input: GFM
-#   syntax_highlighter: rouge
-#   auto_ids: true
-# highlighter: rouge
 kramdown:
   input: GFM
-  enable_coderay: true
-  coderay:
-    coderay_line_numbers: true
-    coderay_css: class
+  auto_ids: true
+
+highlighter: rouge
 
 defaults:
   -

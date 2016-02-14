@@ -15,7 +15,7 @@ Basic steps to setup a Raspberry Pi.
 1. Download [Raspbian](https://www.raspberrypi.org/downloads/raspbian/ "Download Raspbian"). Jessie is the latest stable at the moment, based on debian.
 
 2. Unzip it and write it down to a sdcard.  
-```bash
+```
 sudo dd if='/path/to/file.img' of='/dev/sdcard' bs=1024
 ```
 
@@ -26,7 +26,7 @@ After the installation, it is highly suggested to change the basic auth for acce
 
 - Change the password  
 You definitely do not want the default password to access a passwd-less sudo account.  
-``` 
+```
 $ sudo passwd pi
 ```
 
@@ -37,43 +37,36 @@ The */etc/ssh/ssd_config* file contains all the configurations for the ssh daemo
   PASSWORDS ARE BAD.  
     1. Do a `ssh-keygen -t rsa -b 4096` on the host machine and follow the instructions to generate a new key.  
 
-    2. Copy the freshly generated public key
-    ```
-    (Mac OS X only)
-    $ cat .ssh/id_rsa.pub | pbcopy
-    ```
+    2. Copy the freshly generated public key  
 
-    3. Add it to the raspi authorized keys  
-    ```
-    (On the raspberry pi)
-    $ sudo nano .ssh/authorized_keys
-    *paste from clipboard the copied key*
-    ```
+            $ cat .ssh/id_rsa.pub | pbcopy
+
+    3. Add it to the raspi authorized keys
+
+            $ sudo nano .ssh/authorized_keys
 
     4. Edit the *sshd_config* _PasswordAuthentication_ parameter  
-    ```
-    (On the raspberry pi)
-    $ sudo nano /etc/ssh/sshd_config
-    [...]
-    PasswordAuthentication no
-    [...]
-    ```
 
-    5. Restart ssh  
-    ```
-    sudo service ssh restart
-    ```
+            $ sudo nano /etc/ssh/sshd_config
+            [...]
+            PasswordAuthentication no
+            [...]
+
+    5. Restart ssh
+
+        sudo service ssh restart
+
 
   - Change default sshd port
 
     1. Edit the *ssd_config* _Port_
-    ```
-    $ sudo nano /etc/sshd_config
-    # Package generated configuration file  
-    # See the sshd_config(5) manpage for details  
-    # What ports, IPs and protocols we listen for
-    Port 1234
-    ```
 
-    2. Restart ssh  
-    `sudo service ssh restart`
+        $ sudo nano /etc/sshd_config
+        # Package generated configuration file  
+        # See the sshd_config(5) manpage for details  
+        # What ports, IPs and protocols we listen for
+        Port 1234
+
+    2. Restart ssh
+
+        sudo service ssh restart
