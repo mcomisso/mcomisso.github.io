@@ -15,25 +15,31 @@ description: About page of Matteo Comisso
     <div class="mdl-card__supporting-text mdl-card--border">
       <div class="mdl-grid">
         <div class="mdl-cell--4-col">
+          {% if site.author.twitter %}
           <p class="">
             <i class="fa fa-twitter fa-3x"></i>
             <span class="about-service-title">Twitter</span>
             <span class="mdl-list__item-sub-title"><a href="https://twitter.com/teomatteo89">@teomatteo89</a></span>
           </p>
+          {% endif %}
         </div>
         <div class="mdl-cell--4-col">
+          {% if site.author.github %}
           <p class="">
             <i class="fa fa-github fa-3x"></i>
             <span class="about-service-title">Github</span>
             <span class="mdl-list__item-sub-title"><a href="https://github.com/mcomisso">mcomisso</a></span>
           </p>
+          {% endif %}
         </div>
         <div class="mdl-cell--4-col">
+          {% if site.author.google %}
           <p class="">
             <i class="fa fa-google-plus-square fa-3x"></i>
             <span class="about-service-title">Google+</span>
             <span class="mdl-list__item-sub-title">teomatteo89</span>
           </p>
+          {% endif %}
         </div>
       </div>
     </div>

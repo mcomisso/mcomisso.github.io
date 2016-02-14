@@ -1,24 +1,80 @@
+##################
+# Installed gems #
+##################
 gems:
   - jekyll-sitemap
-  - emoji_for_jekyll
-  - kramdown
-  - jekyll-gist
+  # - jekyll-feed
+  # - jekyll-redirect-from
+  - jemoji
+  # - jekyll-gist
   - jekyll-paginate
-  - jekyll-time-to-read
 
-# permalink: /blog/:year/:month/:title
+############
+# Generics #
+############
 language: en
+url: "https://mcomisso.github.io"
 
+author:
+  name: "Matteo Comisso"
+  email: "matteo.comisso@me.com"
+  uri: "https://twitter.com/teomatteo89"
+  avatar: "/assets/img/m-icon-white-on-blue.png"
+  bio: ""
+  facebook: "matteocomisso"
+  fb_id: 100003457918621
+  twitter: "@teomatteo89"
+  github: "mcomisso"
+  google: "teomatteo89"
+
+
+# Permalinks
+permalink: /:year/:title
+paginate_path: "/blog/page:num/"
+paginate: 5
+
+
+###############
+# Site params #
+###############
+google_analytics_id: "UA-73383879-1"
 markdown: kramdown
+# kramdown:
+#   input: GFM
+#   syntax_highlighter: rouge
+#   auto_ids: true
+# highlighter: rouge
 kramdown:
   input: GFM
+  enable_coderay: true
+  coderay:
+    coderay_line_numbers: true
+    coderay_css: class
 
-highlighter: rouge
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: "true"
 
 version:
   maj: 0
   min: 0
   build: 1
 
-paginate: 5
-paginate_path: "/blog/page:num/"
+# Files to exclude
+exclude:
+  - README.md
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - src
+  - node_modules
+  - package.json
+  - Gruntfile.js
+  - vendor
+  - bower.json

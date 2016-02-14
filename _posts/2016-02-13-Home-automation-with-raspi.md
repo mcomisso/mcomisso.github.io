@@ -2,7 +2,7 @@
 layout: post
 title: Home automation with Raspberry Pi
 description: This is the first post!
-published: false
+published: true
 categories: [raspberry pi]
 tags: [raspi, ssh, howto]
 comments: true
@@ -29,10 +29,11 @@ Let's set up the machine: (Raspbian Jessie)
 After the basic installation of the system, we should change immediately the base login informations, now as  `pi:raspberry`.
 
 Edit the password for `pi` account
-```
+```bash
 $ sudo passwd pi
 Insert new UNIX password:
 ```
+
 Install dependencies
 
 sudo apt-get install

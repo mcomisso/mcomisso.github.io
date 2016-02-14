@@ -19,15 +19,15 @@ Basic steps to setup a Raspberry Pi.
 sudo dd if='/path/to/file.img' of='/dev/sdcard' bs=1024
 ```
 
-3. Boot! Attach network cable, sdcard, power.
+3. Boot! Attach network cable, sdcard, power. :tada:
 
 #### Make it yours
 After the installation, it is highly suggested to change the basic auth for accessing the pi.
 
 - Change the password  
 You definitely do not want the default password to access a passwd-less sudo account.  
-```bash
-$ sudo passwd pi  
+``` 
+$ sudo passwd pi
 ```
 
 - Increase ssh security  
@@ -38,20 +38,20 @@ The */etc/ssh/ssd_config* file contains all the configurations for the ssh daemo
     1. Do a `ssh-keygen -t rsa -b 4096` on the host machine and follow the instructions to generate a new key.  
 
     2. Copy the freshly generated public key
-    ```bash
+    ```
     (Mac OS X only)
     $ cat .ssh/id_rsa.pub | pbcopy
     ```
 
     3. Add it to the raspi authorized keys  
-    ```bash
+    ```
     (On the raspberry pi)
     $ sudo nano .ssh/authorized_keys
     *paste from clipboard the copied key*
     ```
 
     4. Edit the *sshd_config* _PasswordAuthentication_ parameter  
-    ```bash
+    ```
     (On the raspberry pi)
     $ sudo nano /etc/ssh/sshd_config
     [...]
