@@ -5,6 +5,9 @@ script:
   - bundle exec jekyll build
 cache: bundler
 sudo: false
+addons:
+    code_climate:
+        repo_token: baed56bfe826a55afab4cea32ca55644a0705f4ee981982c52892f80fdfcf2d7
 # env:
 #   global:
 #     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
