@@ -4,8 +4,8 @@ title: Matteo Comisso
 ---
 <div class="mdl-cell mdl-cell--8-col">
   <!-- Implement Card style -->
-  <div class="mdl-card mdl-shadow--2dp max-width">
-    <div id="card_home" class="mdl-card__title mdl-card--expand mdl-color-text--white">
+  <div id="card_home" class="mdl-card mdl-shadow--3dp max-width">
+    <div class="mdl-card__title mdl-card--expand mdl-color-text--white">
       <h1 class="mdl-card__title-text">Hey there.</h1>
     </div>
     <div class="mdl-card__supporting-text">
@@ -13,14 +13,17 @@ title: Matteo Comisso
         This site works as a collector of ideas (read "notebook"), that I will (hopefully) use for reference in the future.
       </p>
       <p>
-        I love having fun with the latest technologies, mobile and web development. <br>
+        I love having fun with the latest technologies, both on mobile and web platforms. <br>
         Feel free to clone this site (button on the top right) to see how this site is built using <a href="http://jekyllrb.com/">Jekyll</a>, <a href="https://pages.github.com/">Github Pages</a> or <a href="https://www.getmdl.io/">Material Design Lite</a>. <br>
       </p>
       <p>
         Recently I posted something about:
         {% assign post = site.posts | first %}
-        {{ post.tags | sort | array_to_sentence_string }}
-        <a href="{{ post.url }}">Give it a look</a>
+        {% assign slug = post.title | slugify %}
+        <a id="{{ slug }}" href="{{ post.url }}">{{ post.tags | sort | array_to_sentence_string }}</a>
+        <div class="mdl-tooltip" for="{{ slug }}">
+          {{ post.title }}
+        </div>
       </p>
     </div>
     <div class="mdl-card__actions mdl-card--border">
