@@ -5,44 +5,45 @@ description: About page of Matteo Comisso
 ---
 
 <div class="mdl-cell mdl-cell--8-col">
-  <div class="mdl-card mdl-shadow--2dp">
-    <div class="mdl-card__supporting-text">
-      <h2 class="mdl-card__title-text">You can find me here</h2>
+  <div class="mdl-card mdl-shadow--3dp max-width">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Hello</h2>
     </div>
-  </div>
-
-  <div class="mdl-card mdl-shadow--2dp">
     <div class="mdl-card__supporting-text mdl-card--border">
       <div class="mdl-grid">
-        <div class="mdl-cell--4-col">
-          {% if site.author.twitter %}
-          <p class="">
-            <i class="fa fa-twitter fa-3x"></i>
-            <span class="about-service-title">Twitter</span>
-            <span class="mdl-list__item-sub-title"><a href="https://twitter.com/teomatteo89">@teomatteo89</a></span>
-          </p>
-          {% endif %}
+        <div class="mdl-cell mdl-cell--3-col">
+          <img class="mdl-shadow--3dp" src="/images/profile.gif" alt="" />
         </div>
-        <div class="mdl-cell--4-col">
-          {% if site.author.github %}
-          <p class="">
-            <i class="fa fa-github fa-3x"></i>
-            <span class="about-service-title">Github</span>
-            <span class="mdl-list__item-sub-title"><a href="https://github.com/mcomisso">mcomisso</a></span>
+        <div class="mdl-cell mdl-cell--9-col">
+          <p>
+            I am Matteo Comisso, freelance iOS - Web developer. <br>
+            My interests varies all around the tech world, but I am focused on iOS/mobile development.
           </p>
-          {% endif %}
         </div>
-        <div class="mdl-cell--4-col">
-          {% if site.author.google %}
-          <p class="">
-            <i class="fa fa-google-plus-square fa-3x"></i>
-            <span class="about-service-title">Google+</span>
-            <span class="mdl-list__item-sub-title">teomatteo89</span>
-          </p>
-          {% endif %}
+      </div>
+
+    </div>
+  </div>
+<div class="mdl-grid">
+<!-- This is just a separator -->
+</div>
+  <div class="mdl-card mdl-shadow--2dp max-width">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">You can find me here</h2>
+    </div>
+    <div class="mdl-card__supporting-text mdl-card--border">
+      <div class="mdl-grid">
+        {% for service in site.author.services %}
+        <div class="mdl-cell mdl-cell--1-col">
+          <a href="{{ service.url }}">
+            <i id="{{ service.name | slugify }}" class="fa fa-{{ service.name }} fa-3x"></i>
+          </a>
+          <div class="mdl-tooltip" for="{{ service.name | slugify }}">
+            {{ service.username }}
+          </div>
         </div>
+        {% endfor %}
       </div>
     </div>
   </div>
 </div>
-<div class="mdl-cell mdl-cell--2-col"></div>

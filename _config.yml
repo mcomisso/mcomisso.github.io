@@ -27,7 +27,28 @@ author:
   twitter: "@teomatteo89"
   github: "mcomisso"
   google: "teomatteo89"
+  services:
+    -
+      name: "github"
+      username: "mcomisso"
+      url: "https://github.com/mcomisso"
+    -
+      name: "twitter"
+      username: "@teomatteo89"
+      url: "https://twitter.com/teomatteo89"
+    -
+      name: "facebook"
+      username: "matteocomisso"
+      url: "https://facebook.com/matteocomisso"
+    -
+      name: "linkedin"
+      username: "mcomisso"
+      url: "https://linkedin.com/mcomisso"
 
+    -
+      name: "Google-plus"
+      username: "+Matteocomisso"
+      url: "https://plus.google.com/u/0/+Matteocomisso"
 
 # Permalinks
 permalink: /:year/:title
