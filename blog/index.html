@@ -14,10 +14,7 @@ description: Index of blog
       </h2>
     </div>
     <div class="mdl-card__supporting-text">
-      <span class="post-date">{{post.date | date_to_string}} | <span id="{{ post.url | slugify }}">{{ post.content | reading_time_as_i }}</span></span>
-      <div class="mdl-tooltip" for="{{ post.url | slugify }}">
-      {{post.content | number_of_words }} words
-      </div>
+      <span class="post-date">{{post.date | date_to_string}} | <span>{{post.content | number_of_words }} words</span></span>
       <p> {{ post.excerpt | strip_html }} </p>
     </div>
     <div class="mdl-card__actions mdl-card--border">
