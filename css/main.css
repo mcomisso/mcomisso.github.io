@@ -8,10 +8,6 @@ main {
   background-color: #ebeceb;
 }
 
-.mdl-mini-footer {
-  padding: 0px 16px;
-}
-
 .negative-top {
   margin-top: -50px;
 }
@@ -26,7 +22,12 @@ main {
 */
 
 #card_home {
+  min-height: 70vh;
+}
+#card_home > .mdl-card__title {
+  /*background: url('//i.giphy.com/gU25raLP4pUu4.gif') center/cover;*/
   background: url('/images/home_abstract.png') center/cover;
+  height: 150px;
 }
 
 /*

@@ -1,0 +1,63 @@
+---
+title: Portfolio
+description: Work experience
+
+---
+{% for experience in site.workExperience %}
+<style media="screen">
+  .experience-{{ experience.id }} {
+    color: #fff;
+    height: 200px;
+    background: url('/images/experience/blue-mate.jpeg') center / cover;
+  }
+</style>
+
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--3-col">
+    <div class="mdl-card mdl-shadow--2dp">
+      <div class="experience mdl-card__title mdl-card--expand">
+        <div class="mdl-card__title-text">
+          <span>Blue mate</span>
+        </div>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p>
+          This is a testing example of a working experience.
+        </p>
+        <p>
+          The main role was this, that and this enough.
+        </p>
+      </div>
+      <div class="mdl-card__actions">
+        <a class="mdl-button" href="http://www.h-farm.com/portfolio/blue-mate/">See more (Ita)</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+{% endfor %}
+
+<!--
+
+The structure should be 1 mdl-card for every exp. (mdl-cell mdl-cell-4-col)
+Keep one image as background of the card
+
+________________________
+|                       |
+|
+|
+|
+|
+|
+|_______________________
+| Working Exp
+| Details
+|_______________________
+| [Icon] [Icon]
+|_______________________|
+
+
+ -->
