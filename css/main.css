@@ -21,9 +21,16 @@ main {
   HOME
 */
 
+#fork-me-button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
 #card_home {
   min-height: 70vh;
 }
+
 #card_home > .mdl-card__title {
   /*background: url('//i.giphy.com/gU25raLP4pUu4.gif') center/cover;*/
   background: url('/images/home_abstract.png') center/cover;
