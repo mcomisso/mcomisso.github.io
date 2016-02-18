@@ -5,7 +5,7 @@ body {
 }
 
 main {
-  background-color: #ebeceb;
+  background-color: #fafafa;
 }
 
 .negative-top {
@@ -58,9 +58,3 @@ main {
 .max-width {
   width: 100%;
 }
-
-/*code {
-  background-color: black;
-  color: white;
-  padding: 3px;
-}*/
