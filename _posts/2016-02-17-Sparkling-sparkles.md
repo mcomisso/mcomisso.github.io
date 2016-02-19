@@ -5,6 +5,7 @@ description: Make it rain
 published: true
 categories: [web development]
 tags: [iOS, development, CoreAnimation]
+comments: true
 ---
 
 ## Kaboom
