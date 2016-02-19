@@ -6,6 +6,7 @@ published: true
 categories: [web development]
 tags: [iOS, development, CoreAnimation]
 comments: true
+has_picture: true
 ---
 
 ## Kaboom

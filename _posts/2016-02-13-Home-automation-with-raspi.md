@@ -6,6 +6,7 @@ published: false
 categories: [raspberry pi]
 tags: [raspi, ssh, howto]
 comments: true
+has_picture: false
 ---
 
 I ordered a Raspberry Pi model B a lot of time ago, and I always used it as home server/media center. What about trying something new?

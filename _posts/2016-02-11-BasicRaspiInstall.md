@@ -6,6 +6,7 @@ published: true
 categories: [raspberry pi]
 tags: [raspi, ssh, howto]
 comments: true
+has_picture: true
 ---
 
 Basic steps to setup a Raspberry Pi.
