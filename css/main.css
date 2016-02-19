@@ -1,8 +1,5 @@
 /*CSS SET*/
 /* GENERIC */
-body {
-
-}
 
 main {
   background-color: #fafafa;
@@ -17,14 +14,13 @@ main {
   width: 100%;
 }
 
-/*
+/******
   HOME
-*/
-
+*******/
 #fork-me-button {
   position: absolute;
-  bottom: 30px;
-  right: 30px;
+  bottom: 50px;
+  right: 50px;
 }
 
 #card_home {
