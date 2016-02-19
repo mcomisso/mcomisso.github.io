@@ -21,7 +21,7 @@ author:
   email: "matteo.comisso@me.com"
   uri: "https://twitter.com/teomatteo89"
   avatar: "/assets/img/m-icon-white-on-blue.png"
-  bio: ""  
+  bio: ""
   services:
     -
       name: "github"
@@ -39,11 +39,14 @@ author:
       name: "linkedin"
       username: "mcomisso"
       url: "https://linkedin.com/mcomisso"
-
     -
-      name: "Google-plus"
+      name: "google-plus"
       username: "+Matteocomisso"
       url: "https://plus.google.com/u/0/+Matteocomisso"
+    -
+      name: "medium"
+      username: "@mcomisso"
+      url: "https://medium.com/@mcomisso"
 
 # Permalinks
 permalink: /:year/:title
