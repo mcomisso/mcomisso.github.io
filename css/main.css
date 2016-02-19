@@ -14,6 +14,9 @@ main {
   width: 100%;
 }
 
+/**********************************************/
+/*                    PAGES                   */
+/**********************************************/
 /******
   HOME
 *******/
@@ -33,24 +36,31 @@ main {
   height: 150px;
 }
 
-/*
-  POST
-*/
-.post-margin {
-  margin-bottom: 20px;
-}
-
-.post-date {
-  font-size: 0.8em;
-}
-
-/*
+/*******
   ABOUT
-*/
+********/
+#profile-picture {
+  border-radius: 50%;
+}
+
 .about-service-title {
   /*vertical-align: top;*/
 }
 
 .max-width {
   width: 100%;
+}
+
+/**********************************************/
+/*                    POSTS                   */
+/**********************************************/
+/******
+  POST
+*******/
+.post-margin {
+  margin-bottom: 20px;
+}
+
+.post-date {
+  font-size: 0.8em;
 }
