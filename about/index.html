@@ -19,6 +19,15 @@ description: About page of Matteo Comisso
             I am Matteo Comisso, freelance iOS - Web developer. <br>
             My interests varies all around the tech world, but I am focused on iOS/mobile development.
           </p>
+          <p>
+            Recently I posted something about:
+            {% assign post = site.posts | first %}
+            {% assign slug = post.title | slugify %}
+            <a id="{{ slug }}" href="{{ post.url }}">{{ post.tags | sort | array_to_sentence_string }}</a>
+            <div class="mdl-tooltip" for="{{ slug }}">
+              {{ post.title }}
+            </div>
+          </p>
         </div>
       </div>
 
