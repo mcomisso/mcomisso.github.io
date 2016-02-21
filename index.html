@@ -9,7 +9,6 @@ description: Index of blog
 
   <div class="single-post mdl-card max-width mdl-shadow--2dp post-margin">
     <div class="mdl-card__title mdl-card--expand">
-      <img class="post-image" src="/images/posts/{{ post.title | slugify }}.png" alt="image {{ post.title | slugify }}" />
       <h2 class="mdl-card__title-text">
         {{post.title}}
       </h2>
@@ -18,7 +17,7 @@ description: Index of blog
       <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--10-col">
           <span class="post-date">{{post.date | date_to_string}} | <span>{{post.content | number_of_words }} words</span></span>
-          <p class="hide hidden"> {{ post.excerpt | strip_html }} </p>
+          <p> {{ post.excerpt | strip_html }} </p>
         </div>
         <div class="mdl-cell mdl-cell--2-col">
           {% if post.has_picture %}
@@ -28,7 +27,7 @@ description: Index of blog
       </div>
 
     </div>
-    <div class="mdl-card__actions mdl-card--border hide hidden">
+    <div class="mdl-card__actions mdl-card--border">
       <a href="{{ post.url }}" class="mdl-button mdl-js-button mdl-button--accent">
         Read more
       </a>

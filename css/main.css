@@ -58,23 +58,6 @@ main {
   POST
 *******/
 
-.single-post {
-  transition: .4s;
-  -webkit-transition: .4s;
-}
-
-.hide {
-  transition: .4s;
-	-webkit-transition: .4s;
-  -moz-transition: .4s;
-}
-
-.hidden {
-  transition: .4s;
-	-webkit-transition: .4s;
-  -moz-transition: .4s;
-  height: 0;
-}
 
 .single-post.selected {
 	margin-top: 20px;
