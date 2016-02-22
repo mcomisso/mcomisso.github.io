@@ -11,23 +11,27 @@ layout: default
       </div>
     </div>
   </div>
-
-  <!--
-  Include prev - next
-  If theres entries, raised, else nope
-  -->
+  <!-- PREV - NEXT pages -->
   <div class="mdl-grid">
     <div class="mdl-cell--2-col">
-      <a href="#" class="mdl-button" id="prev-button">PREVIOUS</a>
+      {%  if page.previous %}
+      <a href="{{page.previous.url}}" class="mdl-button mdl-button--raised mdl-button--colored" id="prev-button">PREVIOUS</a>
       <div class="mdl-tooltip" for="prev-button">
-
+        {{page.previous.title}}
       </div>
-    </div>
+      {% else %}
+      <a href="#" class="mdl-button mdl-button--disabled" id="prev-button">PREVIOUS</a>
+      {% endif %}
+    </div>  
     <div class="mdl-cell--2-col mdl-cell--8-offset">
-      <a href="#" class="mdl-button" id="next-button">NEXT</a>
+      {% if page.next %}
+      <a href="{{ page.next.url }}" class="mdl-button mdl-button--raised mdl-button--colored" id="next-button">NEXT</a>
       <div class="mdl-tooltip" for="next-button">
-
+        {{page.next.title}}
       </div>
+      {% else %}
+      <a href="#" class="mdl-button mdl-button--disabled" id="next-button">NEXT</a>
+      {% endif %}
     </div>
   </div>
   {% include disqus.html %}
