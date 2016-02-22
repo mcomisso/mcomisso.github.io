@@ -11,5 +11,24 @@ layout: default
       </div>
     </div>
   </div>
+
+  <!--
+  Include prev - next
+  If theres entries, raised, else nope
+  -->
+  <div class="mdl-grid">
+    <div class="mdl-cell--2-col">
+      <a href="#" class="mdl-button" id="prev-button">PREVIOUS</a>
+      <div class="mdl-tooltip" for="prev-button">
+
+      </div>
+    </div>
+    <div class="mdl-cell--2-col mdl-cell--8-offset">
+      <a href="#" class="mdl-button" id="next-button">NEXT</a>
+      <div class="mdl-tooltip" for="next-button">
+
+      </div>
+    </div>
+  </div>
   {% include disqus.html %}
 </div>
