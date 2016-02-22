@@ -2,7 +2,7 @@
 layout: post
 title: Home automation with Raspberry Pi
 description: This is the first post!
-published: false
+published: true
 categories: [raspberry pi]
 tags: [raspi, ssh, howto]
 comments: true

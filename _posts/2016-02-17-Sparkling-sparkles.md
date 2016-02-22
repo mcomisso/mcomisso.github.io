@@ -2,7 +2,7 @@
 layout: post
 title: Sparkling sparkles
 description: Make it rain
-published: false
+published: true
 categories: [web development]
 tags: [iOS, development, CoreAnimation]
 comments: true

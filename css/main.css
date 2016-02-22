@@ -5,6 +5,10 @@ main {
   background-color: #fafafa;
 }
 
+pre {
+  border-radius: 4px;
+}
+
 .negative-top {
   margin-top: -50px;
 }
