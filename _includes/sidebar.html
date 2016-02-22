@@ -1,4 +1,4 @@
-<div class="mdl-layout__drawer">
+<div class="mdl-layout__drawer" style="overflow: hidden;">
 <nav class="mdl-navigation">
   {% include menu.html %}
   <ul class="mdl-list">
@@ -21,7 +21,11 @@
     </li>
     {% endfor %}
   </ul>
-
 </nav>
 <!-- Insert latest posts -->
+<div class="mdl-grid">
+  <div class="mdl-cell--3-col">
+    {% include twitter.html %}
+  </div>
+</div>
 </div>

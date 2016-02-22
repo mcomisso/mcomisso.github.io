@@ -9,12 +9,12 @@ comments: true
 has_picture: true
 ---
 
-## Kaboom
+### Kaboom
 
 It was a while that I wondered about how various iOS applications implemented the sparkling effect (carousel).  
 I decided to give it a look.
 
-## Hello `CAEmitterLayer`, Hello `CAEmitterCell`
+### Hello `CAEmitterLayer`, Hello `CAEmitterCell`
 
 The idea is pretty straightforward, as the Apple APIs. Every particle you see coming to life is a `CAEmitterCell`, while the CAEmitterLayer is the canvas where those cells live.  
 Writing as they have a life is not that bad, because, APIs speaking, these class do have exactly methods and properties as "birthRate" and "name".
@@ -22,7 +22,7 @@ Writing as they have a life is not that bad, because, APIs speaking, these class
 <!-- ![]() insert image -->
 
 
-## Implementing Sparkles
+### Implementing Sparkles
 
 Let's start: [Download the base project](/projects/)
 

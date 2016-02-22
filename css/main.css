@@ -5,18 +5,22 @@ main {
   background-color: #fafafa;
 }
 
-pre {
-  border-radius: 4px;
-}
+/* Code syntax personalization */
+pre { border-radius: 4px; }
+.highlight { padding: 20px; }
 
-.negative-top {
-  margin-top: -50px;
-}
+/* Negative margin on every page*/
+.negative-top { margin-top: -50px; }
 
 .separator {
   height: 10vh;
   width: 100%;
 }
+
+/**********************************************/
+/*                    MENUS                   */
+/**********************************************/
+
 
 /**********************************************/
 /*                    PAGES                   */
@@ -62,6 +66,16 @@ pre {
   POST
 *******/
 
+.twitter-fab-share {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+.post-title-text {
+  color: white;
+  background-color: rgba(0,0,0,0.4);
+}
 
 .single-post.selected {
 	margin-top: 20px;
@@ -70,8 +84,6 @@ pre {
 	-webkit-transition: .4s;
   -moz-transition: .4s;
 }
-
-
 
 /*.post-margin {
   margin-bottom: 20px;
@@ -84,3 +96,6 @@ pre {
 .post-date {
   font-size: 0.8em;
 }
+
+
+/* Tweet theme override */

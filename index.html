@@ -9,12 +9,9 @@ description: Index of blog
 {% for post in site.posts %}
   <div class="single-post mdl-card max-width mdl-shadow--2dp post-margin">
     <div class="mdl-card__title" style="background: url('/images/posts/{{ post.title | slugify }}.png') center/cover;">
-      <h2 class="mdl-card__title-text" style="color: white; background-color: rgba(0,0,0,0.4);">
+      <h2 class="mdl-card__title-text post-title-text">
         {{post.title}}
       </h2>
-      <p class="mdl-card__subtitle-text">
-        {{ post.date | date_to_string }}
-      </p>
     </div>
 
     <div class="mdl-card__supporting-text">
