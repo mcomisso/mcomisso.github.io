@@ -49,7 +49,7 @@ author:
       url: "https://medium.com/@mcomisso"
 
 # Permalinks
-permalink: /:year/:title
+permalink: /:year/:month/:day/:title
 paginate_path: "/blog/page:num/"
 paginate: 5
 
@@ -79,7 +79,7 @@ version:
   min: 0
   build: 1
 
-# Files to exclude
+# Files to exclude, generic
 exclude:
   - README.md
   - LICENSE
