@@ -9,12 +9,14 @@ main {
 pre { border-radius: 4px; }
 .highlight { padding: 20px; }
 
-/* Negative margin on every page*/
-.negative-top { margin-top: -50px; }
+@media (min-width: 480px) {
+  /* Negative margin on every page*/
+  .negative-top { margin-top: -50px; }
 
-.separator {
-  height: 10vh;
-  width: 100%;
+  .separator {
+    height: 10vh;
+    width: 100%;
+  }
 }
 
 /**********************************************/
@@ -65,6 +67,10 @@ pre { border-radius: 4px; }
 /******
   POST
 *******/
+
+img.max-width {
+  max-width: 200px;
+}
 
 .twitter-fab-share {
   position: absolute;
