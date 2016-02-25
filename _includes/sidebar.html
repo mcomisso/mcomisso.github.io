@@ -8,7 +8,7 @@
       </span>
     </li>
     <!-- Loop for latest posts -->
-    {% for post in site.posts %}
+    {% for post in site.posts limit: 3 %}
     <li class="mdl-list__item mdl-list__item--two-line">
       <span class="mdl-list__item-primary-content">
         <span class="">
