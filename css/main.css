@@ -1,12 +1,16 @@
-/*CSS SET*/
-/* GENERIC */
-
+/*
+CSS SET
+GENERIC
+*/
 main {
   background-color: #fafafa;
 }
 
 /* Code syntax personalization */
-pre { border-radius: 4px; }
+pre {
+  border-radius: 4px;
+}
+
 .highlight {
   padding: 20px;
   overflow-x: auto;
@@ -14,7 +18,9 @@ pre { border-radius: 4px; }
 
 @media (min-width: 480px) {
   /* Negative margin on every page*/
-  .negative-top { margin-top: -50px; }
+  .negative-top {
+    margin-top: -50px;
+  }
 
   .separator {
     height: 10vh;
@@ -23,30 +29,12 @@ pre { border-radius: 4px; }
 }
 
 /**********************************************/
-/*                    MENUS                   */
-/**********************************************/
-
-
-/**********************************************/
 /*                    PAGES                   */
 /**********************************************/
-/******
-  HOME
-*******/
 #fork-me-button {
   position: absolute;
   bottom: 50px;
   right: 50px;
-}
-
-#card_home {
-  min-height: 70vh;
-}
-
-#card_home > .mdl-card__title {
-  /*background: url('//i.giphy.com/gU25raLP4pUu4.gif') center/cover;*/
-  background: url('/images/home_abstract.png') center/cover;
-  height: 150px;
 }
 
 /*******
@@ -67,10 +55,6 @@ pre { border-radius: 4px; }
 /**********************************************/
 /*                    POSTS                   */
 /**********************************************/
-/******
-  POST
-*******/
-
 img.max-width {
   max-width: 200px;
 }
@@ -94,9 +78,6 @@ img.max-width {
   -moz-transition: .4s;
 }
 
-/*.post-margin {
-  margin-bottom: 20px;
-}*/
 .post-image {
   max-width: 20px;
   max-height: 20px;
@@ -105,6 +86,3 @@ img.max-width {
 .post-date {
   font-size: 0.8em;
 }
-
-
-/* Tweet theme override */
