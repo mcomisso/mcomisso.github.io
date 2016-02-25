@@ -4,7 +4,7 @@ layout: default
 {% comment %}
 <!-- contains the single post -->
 {% endcomment %}
-<div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset">
+<div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-cell--4-col-phone mdl-cell--8-col-tablet">
   <div class="mdl-card max-width mdl-shadow--2dp">
     <div class="mdl-card__supporting-text">
     {{ content }}
@@ -13,7 +13,7 @@ layout: default
 
   <!-- PREV - NEXT pages -->
   <div class="mdl-grid">
-    <div class="mdl-cell--2-col">
+    <div class="mdl-cell--2-col mdl-cell--2-col-phone mdl-cell--4-col-tablet">
       {%  if page.previous %}
       <a href="{{page.previous.url}}" class="mdl-button mdl-button--raised mdl-button--colored" id="prev-button">PREVIOUS</a>
       <div class="mdl-tooltip" for="prev-button">
@@ -23,7 +23,7 @@ layout: default
       <a href="#" class="mdl-button mdl-button--disabled" id="prev-button">PREVIOUS</a>
       {% endif %}
     </div>
-    <div class="mdl-cell--2-col mdl-cell--8-offset">
+    <div class="mdl-cell--2-col mdl-cell--8-offset-desktop mdl-cell--2-col-phone mdl-cell--4-col-tablet">
       {% if page.next %}
       <a href="{{ page.next.url }}" class="mdl-button mdl-button--raised mdl-button--colored" id="next-button">NEXT</a>
       <div class="mdl-tooltip" for="next-button">

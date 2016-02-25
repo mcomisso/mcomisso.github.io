@@ -4,11 +4,11 @@ title: Matteo Comisso
 description: Index of blog
 ---
 <!-- List of posts -->
-<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset">
+<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset-desktop mdl-cell--4-col-phone">
 
 <div class="mdl-grid">
   {% for post in site.posts %}
-  <div class="mdl-cell mdl-cell--6-col">
+  <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
 
     <div class="single-post mdl-card max-width mdl-shadow--2dp post-margin">
       <div class="mdl-card__title mdl-card--border">
@@ -19,7 +19,7 @@ description: Index of blog
 
       <div class="mdl-card__supporting-text">
         <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--10-col">
+          <div class="mdl-cell mdl-cell--10-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
             <span class="post-date">{{post.date | date_to_string}} | <span>{{post.content | number_of_words }} words</span></span>
             <p> {{ post.excerpt | strip_html }} </p>
           </div>
