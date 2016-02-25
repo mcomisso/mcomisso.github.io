@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{% if page.language ‰}{{ page.language }}{% else %}{{ site.language }}{% endif %}">
 {% include redirect.html %}
+{% include meta.html %}
   <head>
     <title>{{ page.title }}</title>
     {% include styles.html %}
@@ -16,7 +17,7 @@
   </style>
   <body class="mdl-color--primary">
     <div class="mdl-grid">
-      <div class="mdl-cell mdl-cell--12-col mdl-cell--middle">
+      <div class="mdl-cell mdl-cell--12-col mdl-cell--stretch">
         <div class="mdl-card mdl-shadow--2dp centered">
           {{content}}
           <!-- Navigation buttons -->
