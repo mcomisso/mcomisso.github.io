@@ -9,7 +9,8 @@ comments: true
 has_picture: false
 ---
 
-I ordered a Raspberry Pi model B a lot of time ago, and I always used it as home server/media center. What about trying something new?
+I ordered a Raspberry Pi model B a lot of time ago, and I always used it as home server/media center.
+<!--more-->
 
 If you don't know where to start, take a look here: []
 

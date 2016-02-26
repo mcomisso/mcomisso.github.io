@@ -14,6 +14,7 @@ Basic steps to setup a Raspberry Pi.
 
 #### Installation Quick List
 1. Download [Raspbian](https://www.raspberrypi.org/downloads/raspbian/ "Download Raspbian"). Jessie is the latest stable at the moment, based on debian.
+<!--more-->
 
 2. Unzip it and write it down to a sdcard.  
 ```
