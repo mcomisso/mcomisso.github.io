@@ -53,7 +53,7 @@ projects:
   past:
     -
       name: "Blue-Mate"
-      site: "/"
+      site: "/projects/blue-mate"
       description: "Startup focused on iBeacon, restaurants and proximity marketing campaigns."
     -
       name: "Rocks Today"
