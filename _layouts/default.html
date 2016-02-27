@@ -2,7 +2,7 @@
 <html lang="{% if page.language ‰}{{ page.language }}{% else %}{{ site.language }}{% endif %}">
 {% include redirect.html %}
   <head>
-    <title>{{ page.title }}</title>
+    <title>{{ site.title }} {% if page.title %}- {{page.title}} {%endif%}</title>
     {% include meta.html %}
     {% include styles.html %}
   </head>
