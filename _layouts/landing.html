@@ -1,0 +1,45 @@
+---
+---
+<!DOCTYPE html>
+<html lang="{% if page.language ‰}{{ page.language }}{% else %}{{ site.language }}{% endif %}">
+{% include redirect.html %}
+{% include meta.html %}
+  <head>
+    <title>{{ page.title }}</title>
+    {% include styles.html %}
+  </head>
+  <style media="screen">
+    body {
+      height: 100%;
+    }
+
+    .centered {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    #card-title {
+      background: url("/images/about/profile-image.jpg") center / cover;
+    }
+
+  </style>
+  <body class="mdl-color--primary">
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--12-col mdl-cell--stretch">
+        <div class="mdl-card mdl-cell--4-col mdl-shadow--6dp centered">
+          {{content}}
+          <!-- Navigation buttons -->
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect" href="/projects">Projects</a>
+            <a class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect" href="/blog">Blog</a>
+            <a class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect" href="/about">About</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    {% include scripts.html %}
+    {% include forkme.html %}
+  </body>
+</html>
