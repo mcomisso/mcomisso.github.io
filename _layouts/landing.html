@@ -9,24 +9,15 @@
     {% include styles.html %}
   </head>
   <style media="screen">
-    body {
-      height: 100%;
-    }
 
-    .centered {
-      text-align: center;
-      margin: 0 auto;
-    }
 
-    #card-title {
-      background: url("/images/about/profile-image.jpg") center / cover;
-    }
+
 
   </style>
   <body class="mdl-color--primary">
-    <div class="mdl-grid">
-      <div class="mdl-cell mdl-cell--12-col mdl-cell--stretch">
-        <div class="mdl-card mdl-cell--4-col mdl-shadow--6dp centered">
+    <div class="mdl-grid" style="height: 100%;">
+      <div class="mdl-cell mdl-cell--12-col mdl-cell--middle">
+        <div id="card-block" class="mdl-card mdl-cell--4-col mdl-cell--middle centered">
           {{content}}
           <!-- Navigation buttons -->
           <div class="mdl-card__actions mdl-card--border">
@@ -40,6 +31,19 @@
       </div>
     </div>
     {% include scripts.html %}
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#card-title').animate({
+          height: "400px"
+        }, 1000, function() {
+          $('#card-block').addClass('mdl-shadow--16dp');
+          $('#card-block').animate({
+            'margin-top': "-2px"
+          }, 500);
+        });
+      });
+    </script>
     {% include forkme.html %}
   </body>
 </html>

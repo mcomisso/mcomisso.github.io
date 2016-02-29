@@ -29,6 +29,35 @@ pre {
 }
 
 /**********************************************/
+/*                   LANDING                  */
+/**********************************************/
+
+body {
+  height: 100%;
+}
+
+.centered {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*Rewrites the mdl-shadow to gain a smooth transition*/
+.mdl-shadow--16dp {
+    -webkit-transition: all 1s; // Chrome
+    -moz-transition: all 1s; // Mozilla
+    -o-transition: all 1s; // Opera
+    transition: all 1s;
+}
+
+#card-block {
+
+}
+
+#card-title {
+  background: url("/images/about/profile-image.jpg") center / cover;
+}
+
+/**********************************************/
 /*                    PAGES                   */
 /**********************************************/
 #fork-me-button {
