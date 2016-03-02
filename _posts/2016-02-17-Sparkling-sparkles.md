@@ -11,8 +11,8 @@ has_picture: true
 
 ### Kaboom
 
-It was a while that I wondered about how various iOS applications implemented the sparkling effect (carousel).  
-I decided to give it a look.
+It was a while that I wondered about how various iOS applications implemented the sparkling effect (carousel). 
+<!--more-->
 
 ### Hello `CAEmitterLayer`, Hello `CAEmitterCell`
 

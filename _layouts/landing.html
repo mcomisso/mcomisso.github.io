@@ -1,0 +1,49 @@
+---
+---
+<!DOCTYPE html>
+<html lang="{% if page.language ‰}{{ page.language }}{% else %}{{ site.language }}{% endif %}">
+{% include redirect.html %}
+{% include meta.html %}
+  <head>
+    <title>{{ page.title }}</title>
+    {% include styles.html %}
+  </head>
+  <style media="screen">
+
+
+
+
+  </style>
+  <body class="mdl-color--primary">
+    <div class="mdl-grid" style="height: 100%;">
+      <div class="mdl-cell mdl-cell--12-col mdl-cell--middle">
+        <div id="card-block" class="mdl-card mdl-cell--4-col mdl-cell--middle centered">
+          {{content}}
+          <!-- Navigation buttons -->
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect" href="/projects">Projects</a>
+            <a class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect" href="/blog">Blog</a>
+            <a class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect" href="/about">About</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    {% include scripts.html %}
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#card-title').animate({
+          height: "400px"
+        }, 1000, function() {
+          $('#card-block').addClass('mdl-shadow--16dp');
+          $('#card-block').animate({
+            'margin-top': "-2px"
+          }, 500);
+        });
+      });
+    </script>
+    {% include forkme.html %}
+  </body>
+</html>

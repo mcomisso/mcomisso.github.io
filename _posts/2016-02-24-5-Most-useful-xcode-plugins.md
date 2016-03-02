@@ -10,6 +10,7 @@ has_picture: true
 ---
 
 Xcode is great tool --when does not crashes--, but with these it really becomes super efficient.
+<!--more-->
 
 
 ## Alcatraz  

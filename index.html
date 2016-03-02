@@ -1,40 +1,10 @@
 ---
-layout: default
-title: Matteo Comisso
-description: Index of blog
+layout: landing
 ---
-<!-- List of posts -->
-<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset-desktop mdl-cell--4-col-phone">
 
-<div class="mdl-grid">
-  {% for post in site.posts %}
-  <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
-
-    <div class="single-post mdl-card max-width mdl-shadow--2dp post-margin">
-      <div class="mdl-card__title mdl-card--border">
-        <h2 class="mdl-card__title-text mdl-color-text--blue-grey">
-          {{post.title}}
-        </h2>
-      </div>
-
-      <div class="mdl-card__supporting-text">
-        <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--10-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
-            <span class="post-date">{{post.date | date_to_string}} | <span>{{post.content | number_of_words }} words</span></span>
-            <p> {{ post.excerpt | strip_html }} </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="mdl-card__actions ">
-        <a href="{{ post.url }}" class="mdl-button mdl-js-button">
-          Read more
-        </a>
-      </div>
-
-    </div>
-
-    </div>
-  {% endfor %}
+<div id="card-title" class="mdl-card__title mdl-card--expand">
+  <!-- Image -->
+  <div class="mdl-card__title-text" style="color: white;">
+    Matteo Comisso
   </div>
 </div>
