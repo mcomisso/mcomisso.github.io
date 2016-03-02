@@ -62,7 +62,7 @@ projects:
   current:
     -
       name: "Personal Blog"
-      site: "https://mcomisso.github.io"
+      site: "#"
       description: "This site. Built with Jekyll, material design lite and hosted on Github Pages."
     -
       name: "Architectures"
