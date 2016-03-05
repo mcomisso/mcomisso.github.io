@@ -1,7 +1,7 @@
 <!-- Card style projects -->
 <div class="mdl-card mdl-shadow--2dp max-width">
   <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Current projects</h2>
+    <h2 class="mdl-card__title-text">{{ include.project_title }}</h2>
   </div>
   <div class="mdl-card__supporting-text">
     <ul class="mdl-list">
@@ -15,7 +15,6 @@
         </span>
       </li>
       {% endfor %}
-
     </ul>
   </div>
 </div>
