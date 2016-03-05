@@ -5,7 +5,6 @@ description: A list of useful plugins for Xcode 7
 published: true
 categories: [Xcode, iOS development]
 tags: [iOS, Xcode]
-comments: true
 has_picture: true
 ---
 
