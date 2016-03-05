@@ -11,7 +11,17 @@ Page base layout
   mdl-cell--2-offset-desktop
   mdl-cell--4-col-phone
   mdl-cell--8-col-tablet">
+{% if page.colored %}
+  {% comment %} This layout is for every page with white background. {% endcomment %}
+  <div class="mdl-card max-width mdl-shadow--2dp">
+    <div class="mdl-card__supporting-text">
+      {{ content }}
+    </div>
+  </div>
+{% else %}
+  {% comment %} This layout is for every other style. {% endcomment %}
   <div class="max-width">
     {{ content }}
   </div>
+{% endif %}
 </div>
