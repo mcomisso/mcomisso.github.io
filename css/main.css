@@ -60,6 +60,10 @@ body {
 /**********************************************/
 /*                    PAGES                   */
 /**********************************************/
+.page-content {
+  background: white;
+}
+
 #fork-me-button {
   position: absolute;
   bottom: 50px;
