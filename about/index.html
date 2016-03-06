@@ -27,9 +27,20 @@ description: About page of Matteo Comisso
               {{ post.title }}
             </div>
           </p>
+          <div class="mdl-grid">
+            {% for service in site.author.services %}
+            <div class="mdl-cell mdl-cell--1-col">
+              <a href="{{ service.url }}">
+                <i id="{{ service.name | slugify }}" class="fa fa-{{ service.name }} fa-2x"></i>
+              </a>
+              <div class="mdl-tooltip" for="{{ service.name | slugify }}">
+                {{ service.username }}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
         </div>
       </div>
-
     </div>
   </div>
 
@@ -37,23 +48,56 @@ description: About page of Matteo Comisso
   <!-- This is just a separator -->
   </div>
 
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("user_DDSmx6zNkyXW7LyH7EbGA");
+    })();
+
+    var sendMail = function() {
+
+      var name = document.getElementById('name_field').value;
+      var email = document.getElementById('email_field').value;
+      var notes = document.getElementById('notes_field').value;
+
+      emailjs.send("gmail_acc","personal_site_connection",{name: name, email: email, notes: notes})
+      .then(function(response) {
+         console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+      }, function(err) {
+         console.log("FAILED. error=", err);
+      });
+    };
+  </script>
+
   <div class="mdl-card mdl-shadow--2dp max-width">
     <div class="mdl-card__title">
       <h2 class="mdl-card__title-text">Get in touch</h2>
     </div>
     <div class="mdl-card__supporting-text mdl-card--border">
-      <div class="mdl-grid">
-        {% for service in site.author.services %}
-        <div class="mdl-cell mdl-cell--1-col">
-          <a href="{{ service.url }}">
-            <i id="{{ service.name | slugify }}" class="fa fa-{{ service.name }} fa-3x"></i>
-          </a>
-          <div class="mdl-tooltip" for="{{ service.name | slugify }}">
-            {{ service.username }}
+      <form action="#" class="mdl-cell mdl-cell--12-col">
+        <div class="mdl-grid">
+          <!-- Send mail  -->
+          <div class="mdl-cell mdl-cell--6-col">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label max-width">
+              <input class="mdl-textfield__input" type="text" id="email_field">
+              <label class="mdl-textfield__label" for="email_field">Email...</label>
+            </div>
           </div>
+          <div class="mdl-cell mdl-cell--6-col">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label max-width">
+              <input class="mdl-textfield__input" type="text" id="name_field">
+              <label class="mdl-textfield__label" for="name_field">Name...</label>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col">
+            <div class="mdl-textfield mdl-js-textfield max-width">
+              <textarea class="mdl-textfield__input" type="text" rows= "2" id="notes_field" ></textarea>
+              <label class="mdl-textfield__label" for="notes_field">Notes...</label>
+            </div>
+          </div>
+          <button class="mdl-button" type="submit" name="button" onclick="sendMail()">Send</button>
         </div>
-        {% endfor %}
-      </div>
+      </form>
     </div>
   </div>
 </div>
