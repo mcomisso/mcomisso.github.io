@@ -65,17 +65,17 @@ description: About page of Matteo Comisso
       });
 
       if (email.length > 0 && notes.length > 0) {
+        // Show with default spinner (in template)
+        dialog.showModal();
         emailjs.send("gmail_acc","personal_site_connection",{name: name, email: email, notes: notes})
         .then(function(response) {
           // console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-          $('.mdl-dialog__title').text('Done!');
+          $('.mdl-dialog__title').text('Done');
           $('.mdl-dialog__content').text('Email sent. Thank you!');
-          dialog.showModal();
         }, function(err) {
           // console.log("FAILED. error=", err);
           $('.mdl-dialog__title').text('Error :(');
-          $('.mdl-dialog__content').text('There was the following error: ' + err);
-          dialog.showModal();
+          $('.mdl-dialog__content').text('Please, try again later.');
         });
       }
     };
