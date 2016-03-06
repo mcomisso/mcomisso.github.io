@@ -55,17 +55,29 @@ description: About page of Matteo Comisso
     })();
 
     var sendMail = function() {
-
       var name = document.getElementById('name_field').value;
       var email = document.getElementById('email_field').value;
       var notes = document.getElementById('notes_field').value;
 
-      emailjs.send("gmail_acc","personal_site_connection",{name: name, email: email, notes: notes})
-      .then(function(response) {
-         console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-      }, function(err) {
-         console.log("FAILED. error=", err);
+      var dialog = document.querySelector('dialog');
+      dialog.querySelector('.close').addEventListener('click', function() {
+        dialog.close();
       });
+
+      if (email.length > 0 && notes.length > 0) {
+        emailjs.send("gmail_acc","personal_site_connection",{name: name, email: email, notes: notes})
+        .then(function(response) {
+          // console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+          $('.mdl-dialog__title').text('Done!');
+          $('.mdl-dialog__content').text('Email sent. Thank you!');
+          dialog.showModal();
+        }, function(err) {
+          // console.log("FAILED. error=", err);
+          $('.mdl-dialog__title').text('Error :(');
+          $('.mdl-dialog__content').text('There was the following error: ' + err);
+          dialog.showModal();
+        });
+      }
     };
   </script>
 
@@ -95,9 +107,11 @@ description: About page of Matteo Comisso
               <label class="mdl-textfield__label" for="notes_field">Notes...</label>
             </div>
           </div>
-          <button class="mdl-button" type="submit" name="button" onclick="sendMail()">Send</button>
+          <button class="mdl-button" name="button" onclick="sendMail()">Send</button>
         </div>
       </form>
     </div>
   </div>
+
+  {% include dialog.html %}
 </div>
