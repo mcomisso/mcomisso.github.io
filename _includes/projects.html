@@ -5,7 +5,7 @@
   </div>
   <div class="mdl-card__supporting-text">
     <ul class="mdl-list">
-      {% for project in site.projects.current %}
+      {% for project in site.projects.[include.status] %}
       <li class="mdl-list__item mal mdl-list__item--three-line">
         <span class="mdl-list__item-primary-content">
           <a href="{{project.site}}"><span>{{ project.name }}</span></a>
