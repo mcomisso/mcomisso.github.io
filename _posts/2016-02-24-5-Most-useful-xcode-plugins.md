@@ -2,10 +2,8 @@
 layout: post
 title: 5 Most useful plugins in Xcode
 description: A list of useful plugins for Xcode 7
-published: true
 categories: [Xcode, iOS development]
 tags: [iOS, Xcode]
-has_picture: true
 ---
 
 ## A quick list of super-useful plugins for Xcode.
