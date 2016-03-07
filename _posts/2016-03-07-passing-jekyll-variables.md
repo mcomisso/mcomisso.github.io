@@ -10,6 +10,7 @@ tags: [github, jekyll, webdev]
 
 Ever wanted to pass a variable to a template, while using its name to determine which array to loop?
 Square brackets seem to do the job correctly.
+<!--more-->
 
 This is how the `projects/index.html` page is built:
 {% raw %}
