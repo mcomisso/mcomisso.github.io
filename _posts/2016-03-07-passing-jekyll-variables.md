@@ -12,7 +12,7 @@ Ever wanted to pass a variable to a template, while using its name to determine 
 Square brackets seem to do the job correctly.
 
 This is how the `projects/index.html` page is built:
-
+{% raw %}
 ```html
 {%
   include projects.html
@@ -46,3 +46,5 @@ And this is the basic `project.html` template:
 ```
 
 So, a inclusion can have parameters `{% include projects.html [...] status="current"%}` and you can include them right away with square brackets `{% for project in site.projects.[include.status] %}`.
+
+{% endraw %}
