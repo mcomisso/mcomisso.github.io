@@ -29,6 +29,7 @@ This is how the `projects/index.html` page is built:
 ```
 
 And this is the basic `project.html` template:
+
 ```html
 [...]
   {% for project in site.projects.[include.status] %}
