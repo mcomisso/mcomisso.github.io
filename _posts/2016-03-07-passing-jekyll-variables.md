@@ -6,11 +6,14 @@ categories: [web development]
 tags: [github, jekyll, webdev]
 ---
 
-## Quick assign variables in jekyll
+## Quick assign variables in jekyll.
 
-Ever wanted to pass a variable to a template, while using its name to determine which array to loop?
 Square brackets seem to do the job correctly.
 <!--more-->
+
+> Edit 2016-03-08
+
+> Changed initial text for lower height in preview (blog page).
 
 This is how the `projects/index.html` page is built:
 {% raw %}
