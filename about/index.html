@@ -63,6 +63,9 @@ description: About page of Matteo Comisso
       dialog.querySelector('.close').addEventListener('click', function() {
         dialog.close();
       });
+      if (! dialog.showModal) {
+        dialogPolyfill.registerDialog(dialog);
+      }
 
       if (email.length > 0 && notes.length > 0) {
         // Show with default spinner (in template)
