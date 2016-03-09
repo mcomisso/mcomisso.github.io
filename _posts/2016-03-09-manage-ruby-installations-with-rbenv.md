@@ -2,6 +2,8 @@
 layout: post
 title: Manage ruby installations with rbenv
 description: Quick commands to manage rubies
+categories: [ruby, tools]
+tags: [ruby, rbenv, zsh]
 ---
 
 #### Install rbenv
