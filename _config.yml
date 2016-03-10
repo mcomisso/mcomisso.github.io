@@ -17,6 +17,7 @@ gems:
 language: en
 url: "https://mcomisso.github.io"
 title: "Matteo Comisso"
+
 author:
   name: "Matteo Comisso"
   email: "matteo.comisso@me.com"
@@ -85,9 +86,6 @@ markdown: kramdown
 kramdown:
   input: GFM
   auto_ids: true
-
-sass:
-  style: compressed
 
 highlighter: rouge
 
