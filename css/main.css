@@ -43,9 +43,9 @@ body {
 
 /*Rewrites the mdl-shadow to gain a smooth transition*/
 .mdl-shadow--16dp {
-    -webkit-transition: all 1s; // Chrome
-    -moz-transition: all 1s; // Mozilla
-    -o-transition: all 1s; // Opera
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s; 
+    -o-transition: all 1s; 
     transition: all 1s;
 }
 
