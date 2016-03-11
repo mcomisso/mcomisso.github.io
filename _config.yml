@@ -2,16 +2,15 @@
 # Active plugins #
 ##################
 gems:
-- jekyll-redirect-from
-- jekyll-sitemap
-- jekyll-feed
-- jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+
 # jekyll-mentions
 # jemoji
-
-# jekyll-seo-tag
 # jekyll-gist
-# jemoji
 
 ############
 # Generics #
@@ -20,7 +19,14 @@ language: en
 url: "http://mcomisso.xyz"
 title: "Matteo Comisso"
 
+############
+# SEO SPECIFIC
+twitter:
+  username: teomatteo89
 author:
+  twitter: teomatteo89
+
+about:
   name: "Matteo Comisso"
   email: "matteo.comisso@me.com"
   uri: "https://twitter.com/teomatteo89"
