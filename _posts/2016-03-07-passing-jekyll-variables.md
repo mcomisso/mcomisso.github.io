@@ -11,9 +11,9 @@ tags: [github, jekyll, webdev]
 Square brackets seem to do the job correctly.
 <!--more-->
 
-> Edit 2016-03-08
+**Edit 2016-03-08**
+- _Changed initial text for lower height in preview (blog page)._
 
-> Changed initial text for lower height in preview (blog page).
 
 This is how the `projects/index.html` page is built:
 {% raw %}
