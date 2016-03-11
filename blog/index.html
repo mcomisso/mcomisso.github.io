@@ -21,7 +21,7 @@ description: Index of blog
         <div class="mdl-grid">
           <div class="mdl-cell mdl-cell--10-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
             <span class="post-date">{{post.date | date_to_string}} | <span>{{post.content | number_of_words }} words</span></span>
-            <p> {{ post.excerpt | strip_html }} </p>
+            <p> {{ post.description }} </p>
           </div>
         </div>
       </div>
