@@ -3,13 +3,13 @@
 ##################
 gems:
 - jekyll-mentions
-- jemoji
 - jekyll-seo-tag
 - jekyll-redirect-from
 - jekyll-sitemap
 - jekyll-feed
 - jekyll-paginate
 - jekyll-gist
+#- jemoji
 
 ############
 # Generics #
