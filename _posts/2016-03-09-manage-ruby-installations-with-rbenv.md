@@ -6,7 +6,7 @@ categories: [ruby, tools]
 tags: [ruby, rbenv, zsh]
 ---
 
-#### Install rbenv
+### Install rbenv
 
 Use **brew** as the default package manager in osx.
 <!--more-->
@@ -15,34 +15,39 @@ Use **brew** as the default package manager in osx.
 brew install rbenv rbenv-build
 ```
 
-Append the following code to bash or zsh profile
+Append the following code to bash or zsh profile to initialize the `rbenv` command. 
 
 ```bash
 echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
-#### Usage
+### Usage
 
+
+**List**   
 Fetch the list of available ruby versions 
 
 ```bash
 rbenv install -l
 ```
 
-And install the desired one
+**Install**   
+Install the desired one
 
 ```bash
 rbenv install 2.3.0
 ```
 
-Make it global
+**Global**  
+Make it the default installation global
 
 ```bash
 rbenv global 2.3.0
 ```
 
-Or make it local. Every directory can have a local default ruby version.
+**Local**  
+Or make it local. Each directory can have a local default ruby version.
 
 ```bash
 rbenv local 2.3.0
