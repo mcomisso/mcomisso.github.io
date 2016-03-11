@@ -2,13 +2,13 @@
 # Active plugins #
 ##################
 gems:
-- jekyll-mentions
 - jekyll-redirect-from
 - jekyll-sitemap
 - jekyll-feed
 - jekyll-paginate
 
-
+# jekyll-mentions
+# jemoji
 # jekyll-seo-tag
 # jekyll-gist
 # jemoji
