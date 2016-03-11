@@ -77,7 +77,7 @@ projects:
       description: "This site. Built with Jekyll, material design lite and hosted on Github Pages."
     -
       name: "Architectures"
-      site: ""
+      site: "/mobile-arch"
       description: "Exploring different mobile application architectures."
 
 # Permalinks
