@@ -7,9 +7,8 @@ gems:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
-
-# jekyll-mentions
-# jemoji
+  - jekyll-mentions
+  - jemoji
 # jekyll-gist
 
 ############
