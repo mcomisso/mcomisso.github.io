@@ -25,7 +25,9 @@ twitter:
   username: teomatteo89
 author:
   twitter: teomatteo89
-
+social:
+  links: ["https://github.com/mcomisso", "https://twitter.com/teomatteo89", "https://facebook.com/100003457918621", "https://linkedin.com/mcomisso", "https://plus.google.com/u/0/+Matteocomisso", "https://medium.com/@mcomisso"]
+  
 about:
   name: "Matteo Comisso"
   email: "matteo.comisso@me.com"
