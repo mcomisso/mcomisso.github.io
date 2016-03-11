@@ -12,7 +12,7 @@ description: About page of Matteo Comisso
     <div class="mdl-card__supporting-text mdl-card--border">
       <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-phone">
-          <img id="profile-picture" class="mdl-shadow--4dp mdl-cell--12-col" src="https://twitter.com/{{ site.author.services[1].username | remove: '@' }}/profile_image?size=original" alt="" />
+          <img id="profile-picture" class="mdl-shadow--4dp mdl-cell--12-col" src="https://twitter.com/{{ site.about.services[1].username | remove: '@' }}/profile_image?size=original" alt="" />
         </div>
         <div class="mdl-cell mdl-cell--9-col mdl-cell--4-col-phone">
           <p class="mdl-typhography--body">
@@ -28,7 +28,7 @@ description: About page of Matteo Comisso
             </div>
           </p>
           <div class="mdl-grid">
-            {% for service in site.author.services %}
+            {% for service in site.about.services %}
             <div class="mdl-cell mdl-cell--1-col">
               <a href="{{ service.url }}">
                 <i id="{{ service.name | slugify }}" class="fa fa-{{ service.name }} fa-2x"></i>
