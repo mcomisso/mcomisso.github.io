@@ -6,35 +6,59 @@ description: Blog page of Matteo Comisso
 <!-- List of posts -->
 <div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset-desktop mdl-cell--4-col-phone">
 
-<div class="mdl-grid">
-  {% for post in paginator.posts %}
-  <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+  <div class="mdl-grid">
+    {% for post in paginator.posts %}
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
 
-    <div class="single-post mdl-card max-width mdl-shadow--2dp post-margin">
-      <div class="mdl-card__title mdl-card--border">
-        <h2 class="mdl-card__title-text mdl-color-text--blue-grey">
-          {{post.title}}
-        </h2>
-      </div>
+      <div class="single-post mdl-card max-width mdl-shadow--2dp post-margin">
+        <div class="mdl-card__title mdl-card--border">
+          <h2 class="mdl-card__title-text mdl-color-text--blue-grey">
+            {{post.title}}
+          </h2>
+        </div>
 
-      <div class="mdl-card__supporting-text">
-        <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--10-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
-            <span class="post-date">{{post.date | date_to_string}} | <span>{{post.content | number_of_words }} words</span></span>
-            <p> {{ post.description }} </p>
+        <div class="mdl-card__supporting-text">
+          <a href="#" class="mdl-button mdl-button--disabled">
+            {{ post.date | date_to_string }}
+          </a>
+          <span class="post-date">{{ words_count }} words,{{ reading_time }} minutes</span>
+
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--10-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+              {% assign words_count = post.content | number_of_words %}
+              {% assign reading_time = words_count | plus: 0.0 | divided_by: 180 | ceil %}
+              <p> {{ post.description }} </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="mdl-card__actions ">
-        <a href="{{ post.url }}" class="mdl-button mdl-js-button">
-          Read more
-        </a>
-      </div>
+        <div class="mdl-card__actions ">
 
+          <a href="{{ post.url }}" class="mdl-button mdl-js-button">
+            Read more
+          </a>
+        </div>
+
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="mdl-grid">
+    <!-- paginator -->
+    {% assign first_page = "" %}
+    {% assign last_page = "" %}
+    {% if paginator.page == 1 %}
+      {{ first_page = "mdl-button--disabled" }}
+    {% else if paginator.page == paginator.total_pages %}
+      {{ last_page = "mdl-button--disabled" }}
+    {% endif %}
+    <div class="mdl-cell mdl-cell--1-col mdl-cell--5-offset">
+      <a class="mdl-button {{ first_page }}" href="{{paginator.previous_page_path}}">NEWER</a>
+    </div>
+    <div class="mdl-cell mdl-cell--1-col">
+      <a class="mdl-button {{ last_page }}" href="{{paginator.next_page_path}}">OLDER</a>
     </div>
 
-    </div>
-  {% endfor %}
+
   </div>
 </div>

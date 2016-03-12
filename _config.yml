@@ -79,7 +79,7 @@ projects:
 # Permalinks
 permalink: /:year/:month/:day/:title
 paginate_path: "/blog/page:num/"
-paginate: 5
+paginate: 6
 
 excerpt_separator: <!--more-->
 
