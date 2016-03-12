@@ -26,7 +26,7 @@ author:
   twitter: teomatteo89
 social:
   links: ["https://github.com/mcomisso", "https://twitter.com/teomatteo89", "https://facebook.com/100003457918621", "https://linkedin.com/mcomisso", "https://plus.google.com/u/0/+Matteocomisso", "https://medium.com/@mcomisso"]
-  
+
 about:
   name: "Matteo Comisso"
   email: "matteo.comisso@me.com"
@@ -66,24 +66,20 @@ projects:
       name: "Blue-Mate"
       site: "/projects/blue-mate"
       description: "Startup focused on iBeacon, restaurants and proximity marketing campaigns."
-    -
-      name: "test"
-      site: ""
-      description: ""
   current:
     -
-      name: "Personal Blog"
+      name: "Personal Site"
       site: "https://github.com/mcomisso/mcomisso.github.io"
       description: "This site. Built with Jekyll, material design lite and hosted on Github Pages."
     -
       name: "Architectures"
-      site: ""
+      site: "/projects/mobile-arch"
       description: "Exploring different mobile application architectures."
 
 # Permalinks
 permalink: /:year/:month/:day/:title
 paginate_path: "/blog/page:num/"
-paginate: 5
+paginate: 6
 
 excerpt_separator: <!--more-->
 

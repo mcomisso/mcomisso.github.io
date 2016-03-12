@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Blue-Mate
-colored: true
+card: true
 ---
 
 {% assign bm_desc = site.projects.past | first %}

@@ -3,6 +3,7 @@
 [![License](http://img.shields.io/:license-gpl3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
 [![Code Climate](https://codeclimate.com/github/mcomisso/mcomisso.github.io/badges/gpa.svg)](https://codeclimate.com/github/mcomisso/mcomisso.github.io)
 [![Issue Count](https://codeclimate.com/github/mcomisso/mcomisso.github.io/badges/issue_count.svg)](https://codeclimate.com/github/mcomisso/mcomisso.github.io)
+[![Dependency Status](https://gemnasium.com/mcomisso/mcomisso.github.io.svg)](https://gemnasium.com/mcomisso/mcomisso.github.io)
 
 Hey there.  
 This is the personal site/blog of Matteo Comisso.  
