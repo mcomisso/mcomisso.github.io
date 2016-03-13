@@ -6,6 +6,10 @@ categories: [ruby, tools]
 tags: [ruby, rbenv, zsh]
 ---
 
+I switched to _rbenv_ over _rvm_ and I actually find it really intuitive.  
+Kinda as a personal manual, here is a list of the most used commands.  
+
+
 ### Install rbenv
 
 Use **brew** as the default package manager in osx.
@@ -33,14 +37,14 @@ rbenv install -l
 ```
 
 **Install**   
-Install the desired one
+Install the desired version
 
 ```bash
 rbenv install 2.3.0
 ```
 
 **Global**  
-Make it the default installation global
+Make it available globally
 
 ```bash
 rbenv global 2.3.0
@@ -50,5 +54,5 @@ rbenv global 2.3.0
 Or make it local. Each directory can have a local default ruby version.
 
 ```bash
-rbenv local 2.3.0
+rbenv local 2.2.0
 ```
