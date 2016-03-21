@@ -43,14 +43,14 @@ description: Blog page of Matteo Comisso
     </div>
     {% endfor %}
   </div>
+  
+  {% if paginator.total_pages > 1%}
   <div class="mdl-grid">
     <!-- paginator -->
-    {% assign first_page = "" %}
-    {% assign last_page = "" %}
     {% if paginator.page == 1 %}
-      {{ first_page = "mdl-button--disabled" }}
+      {% assign first_page = "mdl-button--disabled" %}
     {% else if paginator.page == paginator.total_pages %}
-      {{ last_page = "mdl-button--disabled" }}
+      {% assign last_page = "mdl-button--disabled" %}
     {% endif %}
     <div class="mdl-cell mdl-cell--1-col mdl-cell--5-offset">
       <a class="mdl-button {{ first_page }}" href="{{paginator.previous_page_path}}">NEWER</a>
@@ -59,6 +59,7 @@ description: Blog page of Matteo Comisso
       <a class="mdl-button {{ last_page }}" href="{{paginator.next_page_path}}">OLDER</a>
     </div>
 
+    {% endif %}
 
   </div>
 </div>
