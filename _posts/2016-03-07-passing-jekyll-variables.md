@@ -6,7 +6,7 @@ categories: [web development]
 tags: [github, jekyll, webdev]
 ---
 
-## Quick assign variables in jekyll.
+### Quick assign variables in jekyll.
 
 Square brackets seem to do the job correctly.
 <!--more-->

@@ -8,13 +8,13 @@ tags: ["Raspberry pi", "Raspi", "howto", "nvm"]
 
 This installation mode is actually pretty generic. 
 
-## Requirements (Raspi only)
+### Requirements (Raspi only)
 
 ```bash
 $ sudo apt-get install git
 ```
 
-## Node Version Manager
+### Node Version Manager
 Manual install:
 
 ```bash
@@ -29,7 +29,7 @@ $ nvm --version
 0.31.0
 ```
 
-## Install Node.js
+### Install Node.js
 
 Get a list of available installations:
 
