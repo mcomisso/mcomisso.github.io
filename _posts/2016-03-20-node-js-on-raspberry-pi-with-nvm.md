@@ -6,7 +6,9 @@ categories: [Raspberry Pi, hotwo]
 tags: ["Raspberry pi", "Raspi", "howto", "nvm"]
 ---
 
-## Requirements
+This installation mode is actually pretty generic. 
+
+## Requirements (Raspi only)
 
 ```bash
 $ sudo apt-get install git
@@ -20,14 +22,13 @@ $ git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git che
 $ echo "source ~/.nvm/nvm.sh" >> ~/.zshrc
 $ source ~/.zshrc
 ```
-
-
-## Check if works:
+Check if works:
 
 ```bash
 $ nvm --version
 0.31.0
 ```
+
 ## Install Node.js
 
 Get a list of available installations:
@@ -39,13 +40,14 @@ v5.7.1
 v5.8.0
 v5.9.0
 ```
-Install Node
+**Install Node**
 
 ```bash
 $ nvm install v5.9.0
 ```
 
-Check
+**Check**
+
 ```bash
 $ node -v
 ```
