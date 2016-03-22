@@ -7,7 +7,6 @@ tags: [iOS, Xcode]
 ---
 
 ### A quick list of super-useful plugins for Xcode.
-<!--more-->
 
 #### [Alcatraz <i class="fa fa-github"></i>](https://github.com/alcatraz/Alcatraz)
 

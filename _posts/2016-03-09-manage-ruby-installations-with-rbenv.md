@@ -9,13 +9,12 @@ tags: [ruby, rbenv, zsh]
 ### Install rbenv
 
 Use **brew** as the default package manager in osx.
-<!--more-->
 
-```bash 
+```bash
 brew install rbenv rbenv-build
 ```
 
-Append the following code to bash or zsh profile to initialize the `rbenv` command. 
+Append the following code to bash or zsh profile to initialize the `rbenv` command.
 
 ```bash
 echo 'eval "$(rbenv init -)"' >> ~/.zshrc
@@ -26,7 +25,7 @@ source ~/.zshrc
 
 
 **List**   
-Fetch the list of available ruby versions 
+Fetch the list of available ruby versions
 
 ```bash
 rbenv install -l
