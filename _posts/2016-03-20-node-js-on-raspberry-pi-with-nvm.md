@@ -6,8 +6,6 @@ categories: [Raspberry Pi, hotwo]
 tags: ["Raspberry pi", "Raspi", "howto", "nvm"]
 ---
 
-This installation mode is actually pretty generic. 
-
 ### Requirements (Raspi only)
 
 ```bash
