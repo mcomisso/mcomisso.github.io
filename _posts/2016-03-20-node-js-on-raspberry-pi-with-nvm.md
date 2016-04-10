@@ -1,16 +1,10 @@
 ---
 layout: post
-title: Node.js on Raspberry Pi with nvm
-description: "How to install Node.js with nvm on Raspberry Pi"
-categories: [Raspberry Pi, hotwo]
-tags: ["Raspberry pi", "Raspi", "howto", "nvm"]
+title: Node.js with nvm
+description: "How to install Node.js with nvm"
+categories: [Nodejs, hotwo]
+tags: ["Raspberry pi", "Raspi", "howto", "nvm", "nodejs"]
 ---
-
-### Requirements (Raspi only)
-
-```bash
-$ sudo apt-get install git
-```
 
 ### Node Version Manager
 Manual install:
