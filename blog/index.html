@@ -21,12 +21,12 @@ description: Blog page of Matteo Comisso
           <a href="#" class="mdl-button mdl-button--disabled">
             {{ post.date | date_to_string }}
           </a>
-          <span class="post-date">{{ words_count }} words,{{ reading_time }} minutes</span>
+          {% assign words_count = post.content | number_of_words %}
+          {% assign reading_time = words_count | plus: 0.0 | divided_by: 180 | ceil %}
+          <span class="post-date">{{ words_count }} words,{{ reading_time }} minutes read</span>
 
           <div class="mdl-grid">
             <div class="mdl-cell mdl-cell--10-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
-              {% assign words_count = post.content | number_of_words %}
-              {% assign reading_time = words_count | plus: 0.0 | divided_by: 180 | ceil %}
               <p> {{ post.description }} </p>
             </div>
           </div>
