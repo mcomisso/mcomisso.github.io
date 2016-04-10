@@ -1,8 +1,12 @@
 ---
 layout: post
-title: Socket io emit list
-description: quick syntax for socket io emit
+title: Socket io emit/broadcast list
+description: Quick syntax for socket io emit
+categories: [webdev, nodejs]
+tags: ['quicklist', 'socket.io', 'nodejs']
 ---
+
+While developing a small personal project on socket.io, I found this great answer on [stackoverflow](http://stackoverflow.com/a/10099325).
 
 ```javascript
  // sending to sender-client only
@@ -29,3 +33,5 @@ description: quick syntax for socket io emit
  // sending to individual socketid
  socket.broadcast.to(socketid).emit('message', 'for your eyes only');
 ```
+
+So far, :rocket:
