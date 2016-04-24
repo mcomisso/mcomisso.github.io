@@ -1,0 +1,25 @@
+---
+title: Reference lists
+layout: page
+---
+<div class="mdl-grid">
+{% for cat in site.data.lists %}
+  <div class="mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+    <div class="mdl-card max-width">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">{{ cat.title }}</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <ul class="mdl-list">
+          {% for element in cat.elements %}
+          <li class="mdl-list__item mdl-list__item--two-line">
+            <a href="{{element.href}}">{{element.title}}</a>
+            <span class="mdl-list__item-sub-title">{{element.description}}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>

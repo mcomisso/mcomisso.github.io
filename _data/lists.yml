@@ -1,0 +1,52 @@
+# Macrocategories
+#
+# title
+# description
+# elements
+# =================
+# Elements
+#
+# title
+# description
+# href
+
+-
+  title: "iOS Development"
+  elements:
+    -
+      title: "iOS external keyboards shortcut"
+      description: "Integrating keyboard shortcut into an iOS application"
+      href: "http://blog.stablekernel.com/creating-a-delightful-user-experience-with-ios-keyboard-shortcuts?utm_campaign=stable%7Ckernel%20Developer%20Blog%20&utm_content=28880733&utm_medium=social&utm_source=twitter"
+
+-
+  title: "Web Development"
+  elements:
+
+-
+  title: "Security"
+  elements:
+    -
+      title: "Radare2"
+      description: "Introduction book to Radare2"
+      href: "http://radare.gitbooks.io/radare2book/content/"
+    -
+      title: wechall
+      description:
+      href: "https://www.wechall.net"
+    -
+      title: overthewire
+      description:
+      href: "http://overthewire.org"
+-
+  title: "Low level"
+  description:
+  elements:
+    -
+      title: MacOS assembly system calls
+      description: Overview of mac os assembly syscalls
+      href: "http://dustin.schultz.io/blog/2010/11/15/mac-os-x-64-bit-assembly-system-calls/"
+
+    -
+      title: x86 opcode istruction cheatsheed
+      description: List of opcodes
+      href: "http://ref.x86asm.net/coder32.html#xAA"
