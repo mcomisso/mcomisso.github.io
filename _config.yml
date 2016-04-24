@@ -59,23 +59,6 @@ about:
       username: "mcomisso"
       url: "https://medium.com/@mcomisso"
 
-#Projects Data
-projects:
-  past:
-    -
-      name: "Blue-Mate"
-      site: "/projects/blue-mate"
-      description: "Startup focused on iBeacon, restaurants and proximity marketing campaigns."
-  current:
-    -
-      name: "Personal Site"
-      site: "https://github.com/mcomisso/mcomisso.github.io"
-      description: "This site. Built with Jekyll, material design lite and hosted on Github Pages."
-    -
-      name: "Architectures"
-      site: "/projects/mobile-arch"
-      description: "Exploring different mobile application architectures."
-
 # Permalinks
 permalink: /:year/:month/:day/:title
 paginate_path: "/blog/page:num/"

@@ -34,7 +34,7 @@ And this is the basic `project.html` template:
 
 ```html
 [...]
-  {% for project in site.projects.[include.status] %}
+  {% for project in site.data.projects.[include.status] %}
   <li>
     <span>
       <a href="{{project.site}}">
@@ -49,6 +49,6 @@ And this is the basic `project.html` template:
 [...]
 ```
 
-So, a inclusion can have parameters `{% include projects.html [...] status="current"%}` and you can include them right away with square brackets `{% for project in site.projects.[include.status] %}`.
+So, a inclusion can have parameters `{% include projects.html [...] status="current"%}` and you can include them right away with square brackets `{% for project in site.data.projects.[include.status] %}`.
 
 {% endraw %}
