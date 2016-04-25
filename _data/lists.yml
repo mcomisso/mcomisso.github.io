@@ -17,10 +17,17 @@
       title: "iOS external keyboards shortcut"
       description: "Integrating keyboard shortcut into an iOS application"
       href: "http://blog.stablekernel.com/creating-a-delightful-user-experience-with-ios-keyboard-shortcuts?utm_campaign=stable%7Ckernel%20Developer%20Blog%20&utm_content=28880733&utm_medium=social&utm_source=twitter"
-
+    -
+      title: "Private battery info"
+      description: "Marco Arment's Battery information method from private api"
+      href: "https://gist.github.com/marcoarment/92d58159943240d6ba47"
 -
   title: "Web Development"
   elements:
+    -
+      title: "Emoji list"
+      description: "Emoji list cheatsheet"
+      href: "http://emoji-cheat-sheet.com"
 
 -
   title: "Security"
@@ -34,9 +41,13 @@
       description:
       href: "https://www.wechall.net"
     -
-      title: overthewire
+      title: "Overthewire"
       description:
       href: "http://overthewire.org"
+    -
+      title: "SSLStrip info"
+      description: "SSLSTRIP definition and example"
+      href: "https://avicoder.me/2016/02/22/SSLstrip-for-newbies/"
 -
   title: "Low level"
   description:
