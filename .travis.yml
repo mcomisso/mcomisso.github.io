@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.0.0-p648
+  - 2.1.7
 script:
   - bundle exec jekyll build
 cache: bundler
