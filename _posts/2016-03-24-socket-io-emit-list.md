@@ -2,7 +2,7 @@
 layout: post
 title: Socket io emit/broadcast list
 description: Quick syntax for socket io emit
-categories: [webdev, nodejs]
+categories: [web development]
 tags: ['quicklist', 'socket.io', 'nodejs']
 ---
 

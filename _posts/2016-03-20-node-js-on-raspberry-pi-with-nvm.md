@@ -2,7 +2,7 @@
 layout: post
 title: Node.js with nvm
 description: "How to install Node.js with nvm"
-categories: [Nodejs, hotwo]
+categories: [system administration]
 tags: ["Raspberry pi", "Raspi", "howto", "nvm", "nodejs"]
 ---
 
