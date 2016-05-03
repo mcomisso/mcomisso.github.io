@@ -6,10 +6,6 @@ categories: [raspberry pi]
 tags: [raspi, ssh, howto]
 ---
 
-Basic steps to setup a Raspberry Pi.
-------------------------------------
-<!--more-->
-
 ### Installation Quick List
 1. Download [Raspbian](https://www.raspberrypi.org/downloads/raspbian/ "Download Raspbian"). Jessie is the latest stable at the moment, based on debian.
 

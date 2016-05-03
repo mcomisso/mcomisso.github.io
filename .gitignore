@@ -4,5 +4,9 @@ _site/
 _drafts/
 .jekyll-metadata
 
+# Bundler executables stubs
+.bundle
+bin
+
 # OS X related
 .DS_Store

@@ -4,7 +4,7 @@ title: Blue-Mate
 card: true
 ---
 
-{% assign bm_desc = site.projects.past | first %}
+{% assign bm_desc = site.data.projects.past | first %}
 
 # {{ bm_desc.name }}  
 

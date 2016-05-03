@@ -1,22 +1,28 @@
 ---
 layout: default
 title: About
-description: About page of Matteo Comisso
+description: About page
 ---
 
 <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
   <div class="mdl-card mdl-shadow--2dp max-width">
     <div class="mdl-card__title">
-      <h2 class="mdl-card__title-text">Hello</h2>
+	<h2 class="mdl-card__title-text">Hello</h2>
     </div>
     <div class="mdl-card__supporting-text mdl-card--border">
       <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-phone">
-          <img id="profile-picture" class="mdl-shadow--4dp mdl-cell--12-col" src="https://twitter.com/{{ site.about.services[1].username | remove: '@' }}/profile_image?size=original" alt="" />
+          <img id="profile-picture"
+			class="mdl-shadow--4dp mdl-cell--12-col"
+			src="https://twitter.com/{{ site.about.services[1].username | remove: '@' }}/profile_image?size=original" alt="" />
         </div>
         <div class="mdl-cell mdl-cell--9-col mdl-cell--4-col-phone">
           <p class="mdl-typhography--body">
-            I am Matteo Comisso, a web and iOS developer located in Venice, Italy.
+            I am Matteo Comisso, a web and iOS developer located in Venice, Italy. <br/>
+          </p>
+          <p>
+            My current interests are Swift development and server architectures/management, but I constantly
+            stay updated with the latest technologies, trying them myself as soon as possible.<br/>
           </p>
           <p>
             Recently I posted something about:

@@ -2,12 +2,11 @@
 layout: post
 title: 5 Most useful plugins in Xcode
 description: A list of useful plugins for Xcode 7
-categories: [Xcode, iOS development]
+categories: [iOS development]
 tags: [iOS, Xcode]
 ---
 
 ### A quick list of super-useful plugins for Xcode.
-<!--more-->
 
 #### [Alcatraz <i class="fa fa-github"></i>](https://github.com/alcatraz/Alcatraz)
 

@@ -2,14 +2,13 @@
 layout: post
 title: Quick assign variables in jekyll
 description: Syntax to assigning variables
-categories: [web development]
+categories: [web development, notepad]
 tags: [github, jekyll, webdev]
 ---
 
 ### Quick assign variables in jekyll.
 
 Square brackets seem to do the job correctly.
-<!--more-->
 
 **Edit 2016-03-08**
 - _Changed initial text for lower height in preview (blog page)._
@@ -35,7 +34,7 @@ And this is the basic `project.html` template:
 
 ```html
 [...]
-  {% for project in site.projects.[include.status] %}
+  {% for project in site.data.projects.[include.status] %}
   <li>
     <span>
       <a href="{{project.site}}">
@@ -50,6 +49,6 @@ And this is the basic `project.html` template:
 [...]
 ```
 
-So, a inclusion can have parameters `{% include projects.html [...] status="current"%}` and you can include them right away with square brackets `{% for project in site.projects.[include.status] %}`.
+So, a inclusion can have parameters `{% include projects.html [...] status="current"%}` and you can include them right away with square brackets `{% for project in site.data.projects.[include.status] %}`.
 
 {% endraw %}
