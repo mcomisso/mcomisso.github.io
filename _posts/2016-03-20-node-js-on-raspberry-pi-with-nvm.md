@@ -2,8 +2,8 @@
 layout: post
 title: Node.js with nvm
 description: "How to install Node.js with nvm"
-categories: [system administration]
-tags: ["Raspberry pi", "Raspi", "howto", "nvm", "nodejs"]
+categories: [system administration, howto]
+tags: ["Raspberry pi", "Raspi", "nvm", "nodejs"]
 ---
 
 ### Node Version Manager

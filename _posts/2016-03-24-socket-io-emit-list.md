@@ -2,8 +2,8 @@
 layout: post
 title: Socket io emit/broadcast list
 description: Quick syntax for socket io emit
-categories: [web development]
-tags: ['quicklist', 'socket.io', 'nodejs']
+categories: [web development, notepad]
+tags: ['socket.io', 'nodejs']
 ---
 
 While developing a small personal project on socket.io, I found this great answer on [stackoverflow](http://stackoverflow.com/a/10099325).

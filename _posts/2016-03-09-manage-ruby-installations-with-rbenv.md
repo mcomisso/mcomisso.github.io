@@ -2,7 +2,7 @@
 layout: post
 title: Manage ruby installations with rbenv
 description: Quick commands to manage rubies
-categories: [system administration]
+categories: [system administration, howto]
 tags: [ruby, rbenv, zsh]
 ---
 
