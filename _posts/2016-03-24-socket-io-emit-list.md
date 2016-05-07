@@ -5,7 +5,6 @@ description: "Quick syntax for socket io emit"
 categories: [web development, notepad]
 tags: ['socket.io', 'nodejs']
 redirect_from: /post/7
-
 ---
 
 While developing a small personal project on socket.io, I found this great answer on [stackoverflow](http://stackoverflow.com/a/10099325).
