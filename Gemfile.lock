@@ -152,8 +152,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-compose
-  jekyll-paginate
-  jekyll-seo-tag
   travis
 
 BUNDLED WITH
