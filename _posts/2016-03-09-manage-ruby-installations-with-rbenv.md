@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Manage ruby installations with rbenv
-description: Quick commands to manage rubies
+title: "#4 - Manage ruby installations with rbenv"
+description: "Quick commands to manage rubies"
 categories: [system administration, howto]
 tags: [ruby, rbenv, zsh]
+redirect_from: /post/4
 ---
 
 I switched to _rbenv_ over _rvm_ and I actually find it really intuitive.  
