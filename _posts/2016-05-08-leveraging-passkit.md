@@ -1,16 +1,17 @@
 ---
 layout: post
-title: Leveraging passkit
+title: "#8 - Leveraging Apple Wallet"
 description: "Creating a personal pass-badge with iBeacon integration"
 categories: [iOS]
-tags: [iOS, mobile dev, passkit, iBeacons]
+tags: [iOS, mobile dev, passbook, iBeacons]
+redirect_from: /post/8
 ---
 
 ### Preparing for WWDC
 
 Since I'm kinda a social awkward guy, I've decided to create a little pass for the iOS Wallet. The idea is to share it online, and make it pop onto the display when someone is getting close to me, just to say "Hi" and/or share contact information.  
 A standalone application to distribute would be a dumb choice to make, since no one wants to keep a cv in their precious homescreen... but  wallet and its passes can come in handy.  
-iBeacons are also silently issued by iOS, and such a not-so-much-known-functionality is inside passkit since iOS7.
+iBeacons are also silently issued by iOS, and such a not-so-much-known-functionality is inside passbook since iOS7.
 
 
 Making passes is super easy. A pass is just a `json` file, with a bunch of predefined images inside a directory named **_any_.pass**, plus the signing command `signpass` which sits in your $PATH since XCode installation.

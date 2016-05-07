@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Quick assign variables in jekyll
-description: Syntax to assigning variables
+title: "#3 - Quick assign variables in jekyll"
+description: "Syntax to assigning variables"
 categories: [web development, notepad]
 tags: [github, jekyll, webdev]
+redirect_from: /post/3
 ---
 
 ### Quick assign variables in jekyll.

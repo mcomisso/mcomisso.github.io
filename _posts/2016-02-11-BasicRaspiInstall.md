@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Base installation of Raspberry Pi
-description: Little TODO list to setup a Raspberry Pi
+title: "#1 - Base installation of Raspberry Pi"
+description: "Little TODO list to setup a Raspberry Pi"
 categories: [raspberry pi]
 tags: [raspi, ssh, howto]
+redirect_from: /post/1
 ---
 
 ### Installation Quick List

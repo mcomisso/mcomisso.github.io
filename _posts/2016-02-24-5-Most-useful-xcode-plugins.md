@@ -1,9 +1,10 @@
 ---
 layout: post
-title: 5 Most useful plugins in Xcode
-description: A list of useful plugins for Xcode 7
+title: "#2 - 5 Most useful plugins in Xcode"
+description: "A list of useful plugins for Xcode 7"
 categories: [iOS development]
 tags: [iOS, Xcode]
+redirect_from: /post/2
 ---
 
 ### A quick list of super-useful plugins for Xcode.

@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Manage osx apps with brew and brew cask
-description: Brew is the new standard package manager for osx
+title: "#6 - Manage osx apps with brew and brew cask"
+description: "Brew is the new standard package manager for osx"
 categories: [system administration, howto]
 tags: ['quicklist', 'list', 'brew', 'macosx']
+redirect_from: /post/6
 ---
 
 ### Brew
