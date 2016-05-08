@@ -179,9 +179,7 @@ echo '<html><body><a href="./mcomisso.pkpass">DOWNLOAD PASS</a></body></html>' >
 Tap, add, done. :rocket:
 
 ### Final result
-![Lockscreen Image](http://res.cloudinary.com/dmsmziyvz/image/upload/c_scale,w_365/v1462646561/IMG_3049_o2ku04.png) 
-
-![Wallet Image](http://res.cloudinary.com/dmsmziyvz/image/upload/c_scale,w_365/v1462646559/IMG_3047_gz5ras.png)
+![Lockscreen Image](http://res.cloudinary.com/dmsmziyvz/image/upload/c_scale,w_365/v1462646561/IMG_3049_o2ku04.png) ![Wallet Image](http://res.cloudinary.com/dmsmziyvz/image/upload/c_scale,w_365/v1462646559/IMG_3047_gz5ras.png)
 
 
 ### References
