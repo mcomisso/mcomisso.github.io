@@ -15,6 +15,21 @@ description: About page
           <img id="profile-picture"
 			class="mdl-shadow--4dp mdl-cell--12-col"
 			src="https://twitter.com/{{ site.about.services[1].username | remove: '@' }}/profile_image?size=original" alt="" />
+      <div class="mdl-grid">
+        {% for service in site.about.services %}
+        <div class="mdl-cell mdl-cell--4-col">
+          <a href="{{ service.url }}">
+            <i id="{{ service.name | slugify }}" class="fa fa-{{ service.name }} fa-2x"></i>
+          </a>
+          <div class="mdl-tooltip" for="{{ service.name | slugify }}">
+            {{ service.username }}
+          </div>
+        </div>
+        {% endfor %}
+        <div class="mdl-cell mdl-cell--12-col">
+          <button class="mdl-button" type="button" name="button">Contact me</button>
+        </div>
+      </div>
         </div>
         <div class="mdl-cell mdl-cell--9-col mdl-cell--4-col-phone">
           <p class="mdl-typhography--body">
@@ -33,14 +48,15 @@ description: About page
               {{ post.title }}
             </div>
           </p>
+          Past works I was involved in:
           <div class="mdl-grid">
-            {% for service in site.about.services %}
-            <div class="mdl-cell mdl-cell--1-col">
-              <a href="{{ service.url }}">
-                <i id="{{ service.name | slugify }}" class="fa fa-{{ service.name }} fa-2x"></i>
+            {% for app in site.data.works %}
+            <div class="mdl-cell mdl-cell--3-col">
+              <a id="id{{app.name}}" href="{{ app.url }}">
+                <img src="{{ app.icon }}" alt="{{ app.name }} icon" style="width: 100%; border-radius: 15.625%;"/>
               </a>
-              <div class="mdl-tooltip" for="{{ service.name | slugify }}">
-                {{ service.username }}
+              <div class="mdl-tooltip" for="id{{ app.name }}">
+                {{ app.description }}
               </div>
             </div>
             {% endfor %}

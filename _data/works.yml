@@ -1,0 +1,21 @@
+#Works Data
+-
+  name: "Kiwi"
+  url: "http://www.porsche.com/italy/aboutporsche/pressreleases/pit/?pool=italy&id=2014-11-26"
+  description: "iOS app beacon-powered for Porsche's Ex-Machina startup camp"
+  icon: "/images/apps/Kiwi.png"
+-
+  name: "Ideiafactory"
+  url: "http://www.ideiafactory.com.br"
+  description: "App beacon-powered for Milan 'Salone del mobile'"
+  icon: "/images/apps/Ideiafactory.png"
+-
+  name: "Otto"
+  url: "http://ottoapp.it"
+  description: "Timesheet application"
+  icon: "/images/apps/Otto.png"
+-
+  name: "Volantino Facile"
+  url: "http://volantinofacile.it"
+  description: "Find the best deals between vouchers and online pricing"
+  icon: "/images/apps/Volantino-facile.png"
