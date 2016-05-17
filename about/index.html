@@ -17,13 +17,13 @@ description: About page
 
             <img id="profile-picture"
               style="height: 100%"
-        			class="mdl-shadow--4dp mdl-cell--12-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone"
+        			class="mdl-shadow--4dp mdl-cell--12-col-desktop mdl-cell--3-col-tablet mdl-cell--4-col-phone"
         			src="https://twitter.com/{{ site.about.services[1].username | remove: '@' }}/profile_image?size=original" alt="" />
 
-            <div class="mdl-cell--12-col mdl-cell--4-col-tablet">
+            <div class="mdl-cell--12-col mdl-cell--5-col-tablet">
               <div class="mdl-grid">
                 {% for service in site.about.services %}
-                <div class="mdl-cell mdl-cell--4-col mdl-cell--1-col-phone mdl-cell--2-col-tablet">
+                <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--1-col-phone mdl-cell--2-col-tablet mdl-cell-1-col-offset-tablet">
                   <a href="{{ service.url }}">
                     <i id="{{ service.name | slugify }}" class="fa fa-{{ service.name }} fa-2x"></i>
                   </a>
@@ -56,7 +56,7 @@ description: About page
           I was involved in the making of these apps:
           <div class="mdl-grid">
             {% for app in site.data.works %}
-            <div class="mdl-cell mdl-cell--2-col-desktop">
+            <div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--2-col-phone">
               <a href="{{ app.url }}">
                 <img src="{{ app.icon }}" alt="{{ app.name }} icon" style="width: 100%; border-radius: 15.625%;"/>
               </a>
