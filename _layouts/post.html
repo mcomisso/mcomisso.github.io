@@ -26,10 +26,10 @@ comments: true
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
     for="share-post">
       <li class="mdl-menu__item">
-        <a class="mdl-navigation__link" target="_blank" href="https://twitter.com/intent/tweet?via={{ site.about.services[1].username | remove: '@' }}&text={{page.description}}&url={{ site.url | append: page.url | url_encode }}"><i class="fa fa-twitter"></i> Twitter</a>
+        <a class="mdl-navigation__link" target="_blank" href="https://twitter.com/intent/tweet?via={{ site.about.services[1].username | remove: '@' }}&text={{page.description}}&url={{ site.url | append: page.redirect_from | url_encode }}"><i class="fa fa-twitter"></i> Twitter</a>
       </li>
       <li class="mdl-menu__item">
-        <a class="mdl-navigation__link" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url | append: page.url | url_encode }}"><i class="fa fa-facebook"></i> Facebook</a>
+        <a class="mdl-navigation__link" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url | append: page.redirect_from | url_encode }}"><i class="fa fa-facebook"></i> Facebook</a>
       </li>
     </ul>
 
