@@ -28,6 +28,23 @@ pre {
   }
 }
 
+/* OVERWRITES DEFAULT GETMDL.IO BLOCKQUOTE */
+blockquote {
+  border-left: #f44336 solid 3px !important;
+  /* line-height: normal; */
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+blockquote::after {
+  content: "" !important;
+  margin-left: 0;
+}
+
+blockquote::before {
+  content: "" !important;
+}
+
 /**********************************************/
 /*                   SIDEBAR                  */
 /**********************************************/
