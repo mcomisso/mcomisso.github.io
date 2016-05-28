@@ -7,7 +7,7 @@ tags: [nodejs, socket.io]
 redirect_from: /post/9
 ---
 
-> Long distance relation but still want to see a movie together?  
+> Long distance relation but still want to watch a movie together?  
 
 Here comes [Syncstart](https://syncstart.herokuapp.com)!
 
