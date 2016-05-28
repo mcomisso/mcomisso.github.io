@@ -58,7 +58,7 @@ description: About page
             {% for app in site.data.works %}
             <div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--2-col-phone">
               <a href="{{ app.url }}">
-                <img src="{{ app.icon }}" alt="{{ app.name }} icon" style="width: 100%; border-radius: 15.625%;"/>
+                <img src="{{ site.url }}{{ app.icon }}" alt="{{ app.name }} icon" style="width: 100%; border-radius: 15.625%;"/>
               </a>
               <p id="id{{app.name}}" style="text-align: center;">{{app.name}}</p>
               <div class="mdl-tooltip" for="id{{ app.name }}">
