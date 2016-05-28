@@ -13,3 +13,17 @@
 <!--Apple homescreen icons-->
 <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/touch-iphone-retina-icon.jpg">
 <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/touch-ipad-retina-icon.jpg">
+
+<!--Facebook sharer-->
+{% if page.layout == 'post' %}
+<meta property="og:url"                content="{{ site.url }}{{page.url}}" />
+<meta property="og:og:site_name"       content="~/" />
+<meta property="og:title"              content="{{ page.title }}" />
+<meta property="og:description"        content="{{ page.description }}" />
+<meta property="og:type"               content="article" />
+{% else %}
+<meta property="og:url"                content="{{ site.url }}" />
+<meta property="og:og:site_name"       content="~/" />
+<meta property="og:description"        content="Personal website of Matteo Comisso" />
+<meta property="og:type"               content="website" />
+{% endif %}
