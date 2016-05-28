@@ -113,11 +113,6 @@ img.max-width {
   right: 50px;
 }
 
-.post-title-text {
-  color: white;
-  background-color: rgba(0,0,0,0.4);
-}
-
 .single-post.selected {
 	margin-top: 20px;
   margin-bottom: 20px;
