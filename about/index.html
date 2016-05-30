@@ -23,7 +23,7 @@ description: About page
             <div class="mdl-cell--12-col mdl-cell--5-col-tablet">
               <div class="mdl-grid">
                 {% for service in site.about.services %}
-                <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--1-col-phone mdl-cell--2-col-tablet mdl-cell-1-col-offset-tablet">
+                <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--1-col-phone mdl-cell--2-col-tablet mdl-cell-1-col-offset-tablet mdl-typography--text-center">
                   <a href="{{ service.url }}">
                     <i id="{{ service.name | slugify }}" class="fa fa-{{ service.name }} fa-2x"></i>
                   </a>
