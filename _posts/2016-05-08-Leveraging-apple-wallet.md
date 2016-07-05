@@ -79,74 +79,7 @@ And yes, emojis. :tada:
 
 The full `pass.json` here following:
 
-```json
-{
-    "formatVersion": 1,
-    "passTypeIdentifier": "pass.reverse.dns",
-    "serialNumber": " *call uuidgen* ",
-    "logoText": "Matteo Comisso",
-    "teamIdentifier": " *redacted* ",
-    "organizationName": "Matteo Comisso",
-    "description": "Matteo Comisso",
-    "labelColor": "rgb(206, 215, 219)",
-    "foregroundColor": "rgb(255, 255, 255)",
-    "backgroundColor": "rgb(95, 125, 138)",
-    "beacons": [{
-        "proximityUUID": "CD8FA7EE-3847-42E0-A717-24EDC9CD33D8",
-        "relevantText": "Matteo salutes you 👋"
-    }],
-    "barcode": {
-      "altText" : "http://mcomisso.xyz/about",
-      "format" : "PKBarcodeFormatQR",
-      "message" : "http://mcomisso.xyz/about",
-      "messageEncoding" : "iso-8859-1"
-    },
-    "generic": {
-        "primaryFields": [{
-            "key": "work_desc",
-            "label": "",
-            "value": "iOS/web Developer",
-        }],
-        "secondaryFields": [{
-            "key": "website",
-            "label": "Website",
-            "value": "http://mcomisso.xyz",
-        }],
-        "auxiliaryFields": [{
-            "key": "email",
-            "label": "email",
-            "value": "matteo.comisso@me.com"
-        }, {
-            "key": "twitter",
-            "label": "Twitter",
-            "value": "@teomatteo89"
-        }],
-        "backFields": [{
-            "key": "name_back",
-            "label": "whoami",
-            "value": "Matteo Comisso"
-        }, {
-            "key": "email_back",
-            "label": "reply",
-            "value": "matteo.comisso@me.com"
-        }, {
-            "key": "website_back",
-            "label": "Website",
-            "value": "http://mcomisso.xyz/about",
-            "dataDetectorTypes": [
-                "PKDataDetectorTypeLink"
-            ]
-        }, {
-            "key": "location_back",
-            "label": "Where?",
-            "value": "Venice, Italy",
-            "dataDetectorTypes": [
-                "PKDataDetectorTypeAddress"
-            ]
-        }]
-    }
-}
-```
+{% gist mcomisso/8f7fda5a672e02171989051da72f2a2c %}
 
 The directory structure will have this hierarchy:
 
