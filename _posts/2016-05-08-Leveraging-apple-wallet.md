@@ -7,7 +7,7 @@ tags: [iOS, mobile dev, passbook, iBeacons]
 redirect_from: /post/8
 ---
 
-### Preparing for WWDC
+### Preparing for WWDC?
 
 Since I'm kinda a social awkward guy, I've decided to create a little pass for the iOS Wallet. The idea is to share it online, and make it pop onto the display when someone is getting close to me, just to say "Hi" and/or share contact information.  
 A standalone application to distribute would be a dumb choice to make, since no one wants to keep a cv in their precious homescreen... but  wallet and its passes can come in handy.  

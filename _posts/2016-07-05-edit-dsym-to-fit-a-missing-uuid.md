@@ -15,26 +15,33 @@ After some investigation, this is what I got from a freshly build dSYM:
 - Even if the architecture is litte endian, the UUID are written as big endian. This is a specification of the [UUID](http://www.ietf.org/rfc/rfc4122.txt): 
  
 
-```C
+
+```
 [...]
     /* put name space ID in network byte order so it hashes the same
       no matter what endian machine we're on */
 [...]
 ```
+
+
 So:
 
-1. Go back to the deploy commit, to make sure the build system will re-generate the app with the same symbols.
+1. Go back to the deploy commit, make sure the build system will re-generate the app at the same status.
 
-2. Archive again, with fastlane's gym or with a xcarchive  
-        bin/gym # <- (I'm using bundler)
+2. Archive again, with fastlane's gym or with a xcarchive
+
+        $ bin/gym # <- (I'm using bundler)
 
 3. Get the current UUIDs  
-        dwarfdump -u /path/to/MyApp.DSYM
+
+        $ dwarfdump -u /path/to/MyApp.DSYM
         UUID: EBD9418E-20FF-44C1-8D3F-D7E75CC6F0B1 (armv7) MyApp.dSYM/Contents/Resources/DWARF/MyApp
         UUID: D9936E8B-139E-4F63-A063-7863EEFF6B99 (arm64) MyApp.dSYM/Contents/Resources/DWARF/MyApp
 
 4. Change the UUIDs of the binary file with a hex editor.  
-We are looking for the load command LC_UUID `1B000000` and we know that the command size is a 24 bytes long (or 0x18000000), followed by one of the UUIDs.  
-Or, since arm is a little endian,`1B000000 18000000 XXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXX`, where XXXXXXXX are the bytes you may change with the correct UUID.
+We are looking for the LC_UUID load command `1B000000` and we know that the command size is a 24 bytes long (or 0x18000000). What is following those bytes is our actual UUID.  
+Or `1B000000 18000000 XXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXX`, where XXXXXXXX are the bytes you may want change with the correct UUID.
 
 5. Save, submit, start bugfixing. :tada:
+
+![Hex editor](http://res.cloudinary.com/dmsmziyvz/image/upload/c_scale,w_705/v1467839534/UUID_ipbvio.png)

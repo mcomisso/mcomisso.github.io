@@ -10,7 +10,6 @@ gems:
   - jekyll-seo-tag
   - jekyll-mentions
   - jemoji
-# jekyll-gist
 
 ############
 # Generics #
