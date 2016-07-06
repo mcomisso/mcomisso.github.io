@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Better commits
+title: "#11 - Better commits"
 description: "Structured git commits"
 categories: [development]
 tags: [git, mobile dev]

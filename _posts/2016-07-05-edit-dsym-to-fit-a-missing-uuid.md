@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "#10 - Fix Crashlytics missing dSYM."
-description: "Edit a fresh dSYM to fit a build with a different UUID"
+title: "#10 - Fix Crashlytics missing dSYM"
+description: "Edit a fresh dSYM to fit a build with a different UUID."
 categories: [iOS]
 tags: [iOS, otool, dsym, mobile dev]
 redirect_from: /post/10
