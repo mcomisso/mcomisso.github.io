@@ -19,3 +19,8 @@
   url: "http://volantinofacile.it"
   description: "Find the best deals between vouchers and online pricing"
   icon: "/images/apps/Volantino-facile.png"
+-
+  name: "Iper"
+  url: "http://www.iper.it/landing_app_iper.php"
+  description: "Coupon module. Find and use coupons to get exclusive discounts."
+  icon: "/images/apps/"
