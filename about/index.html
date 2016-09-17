@@ -6,37 +6,16 @@ description: About page
 
 <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
   <div class="mdl-card mdl-shadow--2dp max-width">
-    <div class="mdl-card__title">
-	<h2 class="mdl-card__title-text">Hello</h2>
-    </div>
     <div class="mdl-card__supporting-text mdl-card--border">
       <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-          <div class="mdl-grid">
-
-
-            <img id="profile-picture"
-              style="height: 100%"
-        			class="mdl-shadow--4dp mdl-cell--12-col-desktop mdl-cell--3-col-tablet mdl-cell--4-col-phone"
-        			src="https://twitter.com/{{ site.about.services[1].username | remove: '@' }}/profile_image?size=original" alt="" />
-
-            <div class="mdl-cell--12-col mdl-cell--5-col-tablet">
-              <div class="mdl-grid">
-                {% for service in site.about.services %}
-                <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--1-col-phone mdl-cell--2-col-tablet mdl-cell-1-col-offset-tablet mdl-typography--text-center">
-                  <a href="{{ service.url }}">
-                    <i id="{{ service.name | slugify }}" class="fa fa-{{ service.name }} fa-2x"></i>
-                  </a>
-                  <div class="mdl-tooltip" for="{{ service.name | slugify }}">
-                    {{ service.username }}
-                  </div>
-                </div>
-                {% endfor %}
-              </div>
-            </div>
-          </div>
+        <div
+          style='background: url("https://twitter.com/{{ site.about.services[1].username | remove: '@' }}/profile_image?size=original") center / cover;' 
+          class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
         </div>
         <div class="mdl-cell mdl-cell--9-col mdl-cell--4-col-phone">
+          <p class="mdl-typhography--display-1">
+            Hello
+          </p>
           <p class="mdl-typhography--body">
             I am Matteo Comisso, a web and iOS developer located in Venice, Italy. <br/>
           </p>
@@ -63,9 +42,23 @@ description: About page
     </div>
   </div>
 
-  <div class="mdl-grid">
-  <!-- This is just a separator -->
+<div class="mdl-grid">
+  {% for service in site.about.services %}
+  <div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--1-col-phone mdl-cell--2-col-tablet mdl-cell-1-col-offset-tablet mdl-typography--text-center">
+    <a href="{{ service.url }}">
+      <span class="mdl-chip mdl-chip--contact">
+                    <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">
+                      <i id="{{ service.name | slugify }}" class="fa fa-{{ service.name }}"></i>
+                    </span>
+      <span class="mdl-chip__text">{{ service.name }}</span>
+      </span>
+    </a>
+    <div class="mdl-tooltip" for="{{ service.name | slugify }}">
+      {{ service.username }}
+    </div>
   </div>
+  {% endfor %}
+</div>
 
   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script type="text/javascript">
