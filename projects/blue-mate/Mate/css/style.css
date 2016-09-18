@@ -1,0 +1,129 @@
+		html{
+			width: 1278px;
+			background-color: rgb(49,40,40);
+			margin: 0 auto;
+		}
+		
+		body{
+			width: 1278px;
+			background-image: url("../img/Sfondo_landing.png");
+			background-position: center 0;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-color: rgb(49,40,40);
+			margin: 0 auto;
+			
+		}
+
+		div{
+			margin: 0 auto;
+		}
+
+		h1{
+			background-color: rgba(49,40,40, 0.9);
+			font-size: 62px !important; 
+			font-weight: 400 !important;
+			text-align: center;
+			margin: 0;
+			padding: 10px;
+		}
+		
+		h2{
+			font-family: Helvetica;
+			font-weight: 200;
+			color:white; 
+			background-color:black;
+			font-size: 40px;
+			width: 33%;
+			height: 46px;
+			text-align: center;
+			vertical-align: center;
+		}
+		
+		h3{
+			font-weight: 200;
+			font-size: 18px;
+		}
+		
+		.text, h1{
+			color: white;
+			font-family: Helvetica;
+			font-size: 15px;
+			font-weight: 100;
+		}
+		
+		
+		/*##############################
+			Tabella landing page*/
+		#landingTable{
+			max-height: 764px !important;
+			height: 764px;
+			width: 1278px;
+			
+		}
+		
+		.colonTable{
+			height: 764px;
+			width: 639px;
+		}
+		
+		.menu{
+		
+			background-color: rgba(106,94,94,0.9) !important;
+			padding: 4px;
+			margin: 0 auto;
+		}
+
+		.navigationImages{
+			display:inline; 
+			margin:0 -19px;
+		}
+		
+		.pages{
+			margin:0; 
+			padding:40px 0; 
+			width:1278px;
+		}
+		
+		.dark{
+			background-color: rgb(56,54,54);
+			color:white;
+		}
+		
+		.light{
+			background-color:rgb(186,185,185);
+			color:black;
+		}
+		
+		.right{
+			right: 0;
+			margin-left: auto;
+		}
+		
+		p{
+			width:400px; 
+			font-family:Helvetica; 
+			padding:20px; 
+			font-size:12px;
+			text-align: left;
+		}
+		
+		ul, li{
+			color: white;
+			right:0;
+			font-family: Helvetica;
+			list-style: circle;
+			margin-left: auto;
+			width: 400px;
+			font-size: 12px;
+		}
+		
+		li{
+			margin-bottom: 5px;			
+		}
+		
+		a{
+			text-decoration: none;
+			color: white;
+			font-family: Helvetica;
+		}
