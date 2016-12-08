@@ -176,6 +176,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-compose
+  jekyll-swiss
   travis
 
 BUNDLED WITH

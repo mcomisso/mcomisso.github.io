@@ -12,6 +12,8 @@ gems:
   - jekyll-avatar
   - jemoji
 
+theme: jekyll-swiss
+
 ############
 # Generics #
 ############
