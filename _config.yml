@@ -12,8 +12,6 @@ gems:
   - jekyll-avatar
   - jemoji
 
-theme: jekyll-swiss
-
 ############
 # Generics #
 ############
@@ -65,7 +63,7 @@ about:
 # Permalinks
 permalink: /:year/:month/:day/:title
 paginate_path: "/blog/page:num/"
-paginate: 6
+paginate: 5
 
 excerpt_separator: <!--more-->
 
@@ -90,6 +88,7 @@ defaults:
       comments: "true"
 
 version: 0.0.1
+mdlversion: 1.2.1
 
 # Files to exclude, generic
 exclude:
