@@ -3,9 +3,10 @@ rvm:
   - 2.3.1
 before-script:
   - npm install -g bower
-  - gem install bundler
-script:
   - bower install
+  - rvm install 2.3.1
+  - gem install bundler github-pages
+script: 
   - bundle exec jekyll build
 cache: bundler
 sudo: false
