@@ -10,3 +10,10 @@ bin
 
 # OS X related
 .DS_Store
+
+# Bower
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
