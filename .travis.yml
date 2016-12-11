@@ -2,14 +2,15 @@ language: node_js
 node_js:
   - "6"
 
-before-install:
+before_install:
   - ruby --version
+
 install:
   - rvm install 2.3.1
   - gem install bundler
   - npm install -g bower
 
-before-script:  
+before_script:  
   - bundle install
   
 script: 
