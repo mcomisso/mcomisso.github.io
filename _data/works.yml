@@ -24,3 +24,8 @@
   url: "http://www.iper.it/landing_app_iper.php"
   description: "Coupon module. Find and use coupons to get exclusive discounts."
   icon: "/images/apps/Iper.png"
+-
+  name: "Eversnap"
+  url: "http://geteversnap.com"
+  description: "Eversnap iPhone can help any event to collect all their guests' photos and videos in one online album."
+  icon: "/images/apps/Eversnap.png"
