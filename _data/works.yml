@@ -29,3 +29,9 @@
   url: "http://geteversnap.com"
   description: "Eversnap iPhone can help any event to collect all their guests' photos and videos in one online album."
   icon: "/images/apps/Eversnap.png"
+
+-
+  name: "VoucherCodes.co.uk"
+  url: "https://vouchercodes.co.uk"
+  description: ""
+  icon: "/images/apps/VC.png"
