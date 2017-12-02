@@ -50,30 +50,17 @@ description: Contact page
       var email = document.getElementById('email_field').value;
       var notes = document.getElementById('notes_field').value;
 
-      var dialog = document.querySelector('dialog');
-      dialog.querySelector('.close').addEventListener('click', function() {
-        dialog.close();
-      });
-      if (! dialog.showModal) {
-        dialogPolyfill.registerDialog(dialog);
-      }
-
       if (email.length > 0 && notes.length > 0) {
         // Show with default spinner (in template)
-        dialog.showModal();
         emailjs.send("gmail_acc","personal_site_connection",{name: name, email: email, notes: notes})
         .then(function(response) {
-          // console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-          $('.mdl-dialog__title').text('Done');
-          $('.mdl-dialog__content').text('Email sent. Thank you!');
+          console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+          alert("Mail sent.")
         }, function(err) {
-          // console.log("FAILED. error=", err);
-          $('.mdl-dialog__title').text('Error :(');
-          $('.mdl-dialog__content').text('Please, try again later.');
+          console.log("FAILED. error=", err);
+          alert("There was an error, mail not sent.")
         });
       }
     };
   </script>
-
-  {% include dialog.html %}
   </div>
