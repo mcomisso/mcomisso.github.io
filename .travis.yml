@@ -6,7 +6,7 @@ before_install:
   - ruby --version
 
 install:
-  - rvm install 2.3.1
+  - rvm install 2.4.2
   - gem install bundler
   - npm install -g bower
 
