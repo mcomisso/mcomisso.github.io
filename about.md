@@ -32,7 +32,7 @@ Recently I posted something about {% assign post = site.posts | first %} {{ post
     url
   </th>
 </tr>
-{% for app in site.data.works %}
+{% for app in site.data.works reversed %}
   <tr>
     <td>
       <a href="{{ app.url }}">
