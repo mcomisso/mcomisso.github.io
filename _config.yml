@@ -16,7 +16,7 @@ plugins:
 # Generics #
 ############
 language: en
-url: "http://mcomisso.xyz"
+url: "http://mcomisso.me"
 title: "Matteo Comisso"
 
 ############
@@ -24,6 +24,8 @@ title: "Matteo Comisso"
 twitter:
   username: teomatteo89
 author:
+  name: Matteo
+  url: http://mcomisso.me
   twitter: teomatteo89
 social:
   links: ["https://github.com/mcomisso", "https://twitter.com/teomatteo89", "https://facebook.com/100003457918621", "https://linkedin.com/mcomisso", "https://plus.google.com/u/0/+Matteocomisso", "https://medium.com/@mcomisso"]
