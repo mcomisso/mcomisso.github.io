@@ -13,7 +13,7 @@ I'm a iOS developer in <a href="https://goo.gl/maps/qSTGhQfBvbS2" target="_blank
           
 My current interests are Swift development and AR applications, but I constantly stay updated with the latest technologies, trying them myself as soon as possible.
           
-Recently I posted something about {% assign post = site.posts | first %} {{ post.tags | sort | array_to_sentence_string }}: <a href="{{ post.url }}">{{ post.title }}</a> 
+Recently I posted something about {% assign post = site.posts | first %} {{ post.tags | sort | array_to_sentence_string }}: <a href="{{ post.url }}">{{ post.title }}</a>
 
 ### I was involved in the making of these apps:
 
