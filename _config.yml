@@ -4,8 +4,12 @@
 plugins:
   - jekyll-feed #Optionals plugins from here
   - jekyll-redirect-from
-  - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-mentions
   - jekyll-avatar
   - jemoji
   - jekyll-mentions
@@ -15,6 +19,7 @@ plugins:
 # Generics #
 ############
 language: en
+url: "http://mcomisso.me"
 title: "Matteo Comisso"
 email: matteo.comisso@me.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -26,12 +31,13 @@ url: "http://mcomisso.xyz"
 twitter_username: teomatteo89
 github_username:  mcomisso
 
-
 ############
 # SEO SPECIFIC
 twitter:
   username: teomatteo89
 author:
+  name: Matteo
+  url: http://mcomisso.me
   twitter: teomatteo89
 social:
   links: ["https://github.com/mcomisso", "https://twitter.com/teomatteo89", "https://facebook.com/100003457918621", "https://linkedin.com/mcomisso", "https://plus.google.com/u/0/+Matteocomisso", "https://medium.com/@mcomisso"]
