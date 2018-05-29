@@ -10,13 +10,10 @@ layout: default
 
   <ul class="post-list">
     {% for post in site.posts %}
-    
       {% if post.categories contains "micropost" %}
-        {% assign datetime_format = site.minima.date_format | default: "%b %-d, %Y - %H:%M" %}
         <li>
-          <span class="post-meta">{{ post.date | date: datetime_format }}</span>
-          <h3>{{ post.content }}</h3>
-          
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y - %H:%M" }}</span>
+          <h3>{{ post.content }}</h3>          
         </li>
       {% else %}
         <li>
