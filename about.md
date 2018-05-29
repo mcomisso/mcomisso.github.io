@@ -63,11 +63,8 @@ Recently I posted something about {% assign post = site.posts | first %} {{ post
 
 ### Want to get in touch? 
 
-<a href="/contact">Send me an email</a> or use Intercom by pressing the bottom right button on this page.
+Send me an email: matteo.comisso -at- icloud.com
 
 {% for service in site.about.services %}
-<a href="{{ service.url }}">
-  <i id="{{ service.name | slugify }}" class="fa fa-{{ service.name }}"></i>
-  <span class="mdl-chip__text">{{ service.name }}</span>
-</a>
+<i id="{{ service.name | slugify }}" class="fa fa-{{ service.name }}"></i> [{{ service.name }}]({{ service.url }}) - {{ service.username }}
 {% endfor %}

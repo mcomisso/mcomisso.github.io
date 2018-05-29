@@ -38,7 +38,7 @@ Tools: `Sublime text`, `coda`.
 {: .mdl-typography--title}
 
 - This blog :tada:  
-  Built with [Jekyll](http://jekyllrb.com/), [Material design lite](https://getmdl.io) and hosted at [Github Pages](https://pages.github.com/)
+  Built with [Jekyll](http://jekyllrb.com/) and hosted at [Github Pages](https://pages.github.com/)
 
 - [Hello Kiwi](https://github.com/mcomisso/hellokiwi)  
   A simple iOS application built around iBeacon technology, for the [Kiwi team](http://exmachina.porscheitalia.com/ita/team-scheda/kiwi-1).  
