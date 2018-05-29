@@ -18,17 +18,19 @@ tags: [microblog, thoughts]
 """
 
 def create_file():
+  """Create a file in the correct folder"""
   filename = str(datetime.datetime.now()).replace(' ', '-')
   return (open(os.path.join(DEFAULT_FOLDER, filename), "w+"), filename)
   
 
 def write_post(file, content):
+  """Write the post into a file"""
   file.write(template % content)
   file.close()
 
 
-
 def publish(filename):
+  """Save the commit inside the repository"""
   git_add_output = subprocess.check_output(["git", "add", "./*"])
   output = subprocess.check_output(["git", "commit", "-am", filename])
   print(output)
