@@ -8,10 +8,15 @@ import datetime
 
 DEFAULT_FOLDER = os.path.join(os.path.dirname(__file__), "_posts")
 
+post_date = datetime.datetime.now()
+
+
+
 template = """---
 layout: micro
 categories: [micropost]
 tags: [microblog, thoughts]
+date: %s
 ---
 %s
 """
@@ -19,13 +24,13 @@ tags: [microblog, thoughts]
 
 def create_file():
   """Create a file in the correct folder"""
-  filename = "%s.md" % str(datetime.datetime.now()).replace(' ', '-')
+  filename = "%s.md" % str(post_date).replace(' ', '-')
   return (open(os.path.join(DEFAULT_FOLDER, filename), "w+"), filename)
   
 
 def write_post(file, content):
   """Write the post into a file"""
-  file.write(template % content)
+  file.write(template % str(post_date.isoformat()), content)
   file.close()
 
 def save(filename):
