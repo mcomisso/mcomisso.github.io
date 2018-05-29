@@ -19,7 +19,7 @@ tags: [microblog, thoughts]
 
 def create_file():
   """Create a file in the correct folder"""
-  filename = str(datetime.datetime.now()).replace(' ', '-')
+  filename = "%s.md" % str(datetime.datetime.now()).replace(' ', '-')
   return (open(os.path.join(DEFAULT_FOLDER, filename), "w+"), filename)
   
 
