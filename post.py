@@ -10,7 +10,7 @@ DEFAULT_FOLDER = os.path.join(os.path.dirname(__file__), "_posts")
 
 template = """---
 layout: micro
-categories: [microblog]
+categories: [micropost]
 tags: [microblog, thoughts]
 ---
 %s
