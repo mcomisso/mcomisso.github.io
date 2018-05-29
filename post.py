@@ -30,7 +30,7 @@ def create_file():
 
 def write_post(file, content):
   """Write the post into a file"""
-  file.write(template % str(post_date.isoformat()), content)
+  file.write(template % (str(post_date.isoformat()), content))
   file.close()
 
 def save(filename):
