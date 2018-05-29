@@ -8,7 +8,6 @@ import datetime
 
 DEFAULT_FOLDER = os.path.join(os.path.dirname(__file__), "_posts")
 
-
 template = """---
 layout: micro
 categories: [microblog]
@@ -16,6 +15,7 @@ tags: [microblog, thoughts]
 ---
 %s
 """
+
 
 def create_file():
   """Create a file in the correct folder"""
@@ -28,12 +28,17 @@ def write_post(file, content):
   file.write(template % content)
   file.close()
 
-
-def publish(filename):
+def save(filename):
   """Save the commit inside the repository"""
   git_add_output = subprocess.check_output(["git", "add", "./*"])
-  output = subprocess.check_output(["git", "commit", "-am", filename])
-  print(output)
+  print(git_add_output)
+
+  git_commit_output = subprocess.check_output(["git", "commit", "-am", "[Micro] %s" % filename])
+  print(git_commit_output)
+
+def publish():
+  git_push = subprocess.check_output(["git", "push"])
+  print(git_push)
 
 
 
@@ -41,4 +46,5 @@ if __name__ == '__main__':
   text =  string.join(sys.argv[1::])
   (file, filename) = create_file()
   write_post(file, text)
-  publish(filename)
+  save(filename)
+  publish()
