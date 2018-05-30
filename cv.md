@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Curriculum Vitae
+title: Resume
 description: CV Matteo Comisso
 ---
-
-[Download cv]({{ site.url | append: '/res/cv.pdf' }})
 
 # Working experience
 
