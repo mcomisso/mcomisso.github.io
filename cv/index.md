@@ -4,6 +4,7 @@ title: Curriculum Vitae
 description: CV Matteo Comisso
 ---
 
+[Download cv]({{ site.url | append: '/res/cv.pdf' }})
 
 # Working experience
 
