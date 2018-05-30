@@ -7,9 +7,7 @@ import string
 import datetime
 
 DEFAULT_FOLDER = os.path.join(os.path.dirname(__file__), "_posts")
-
 post_date = datetime.datetime.now()
-
 
 
 template = """---
@@ -26,12 +24,13 @@ def create_file():
   """Create a file in the correct folder"""
   filename = "%s.md" % str(post_date).replace(' ', '-')
   return (open(os.path.join(DEFAULT_FOLDER, filename), "w+"), filename)
-  
+
 
 def write_post(file, content):
   """Write the post into a file"""
   file.write(template % (str(post_date.isoformat()), content))
   file.close()
+
 
 def save(filename):
   """Save the commit inside the repository"""
@@ -40,6 +39,7 @@ def save(filename):
 
   git_commit_output = subprocess.check_output(["git", "commit", "-am", "[Micro] %s" % filename])
   print(git_commit_output)
+
 
 def publish():
   git_push = subprocess.check_output(["git", "push"])
