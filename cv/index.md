@@ -4,38 +4,25 @@ title: Curriculum Vitae
 description: CV Matteo Comisso
 ---
 
-# Curriculum Vitae
-{: .mdl-typography--display-2}
-
-Matteo Comisso, freelance iOS and web developer.
-{: .mdl-typography--headline}
 
 # Working experience
-{: .mdl-typography--title}
 
+Freelance iOS and web developer
 
-Freelance iOS-web Developer
-{: .mdl-typography--subhead}
-
-Tech: `swift`, `Objective-C`, `Python`, `AngularJS`, `HTML`, `CSS`.
+Tech: `swift`, `Objective-C`, `Python`, `AngularJS`, `HTML`, `CSS`.  
 Tools: `Xcode`, `PyCharm`, `Jenkins`, `fastlane`.
 
+H-Farm, Blue Mate startup: Lead developer
 
-Lead developer
-{: .mdl-typography--subhead}
-
-Tech: `Objective-C`, `Python`, `Javascript`.
+Tech: `Objective-C`, `Python`, `Javascript`.  
 Tools: `Xcode`, `Parse.com`.
 
-
 Web Developer
-{: .mdl-typography--subhead}
-Tech: `php`, `codeigniter`, `HTML`, `css`, `Javascript`.
+Tech: `php`, `codeigniter`, `HTML`, `css`, `Javascript`.  
 Tools: `Sublime text`, `coda`.
 
 
 # Personal projects
-{: .mdl-typography--title}
 
 - This blog :tada:  
   Built with [Jekyll](http://jekyllrb.com/) and hosted at [Github Pages](https://pages.github.com/)
