@@ -85,18 +85,9 @@ kramdown:
   auto_ids: true
 
 theme: jekyll-swiss
-theme_color: red
+theme_color: blue
 
 highlighter: rouge
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      comments: "true"
 
 # Files to exclude, generic
 exclude:

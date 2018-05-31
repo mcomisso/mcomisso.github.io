@@ -40,13 +40,13 @@ Recently I posted something about {% assign post = site.posts | first %} {{ post
     </td>
     
     <td>
-      <div for="id{{ app.name }}">
+      <p for="id{{ app.name }}">
         {{ app.description }}
-      </div>
+      </p>
     </td>
 
     <td>
-      <p id="id{{app.name}}" style="text-align: center;">
+      <p id="id{{app.name}}">
         <a href="{{ app.url }}">{{app.name}}</a>
       </p>
     </td>
@@ -63,8 +63,8 @@ Recently I posted something about {% assign post = site.posts | first %} {{ post
 
 ### Want to get in touch? 
 
-Send me an email: matteo.comisso -at- icloud.com
-
+Send me an email: matteo.comisso -at- icloud.com  
+or  
 <p>
 {% for service in site.about.services %}
 <a href="{{ service.url }}"><i id="{{ service.name | slugify }}" class="fa fa-2x fa-{{ service.name }}"></i></a>
