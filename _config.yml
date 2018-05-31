@@ -84,7 +84,7 @@ kramdown:
   input: GFM
   auto_ids: true
 
-theme: minima
+theme: jekyll-swiss
 theme_color: red
 
 highlighter: rouge

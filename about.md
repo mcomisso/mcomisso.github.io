@@ -65,6 +65,9 @@ Recently I posted something about {% assign post = site.posts | first %} {{ post
 
 Send me an email: matteo.comisso -at- icloud.com
 
+<p>
 {% for service in site.about.services %}
-<i id="{{ service.name | slugify }}" class="fa fa-{{ service.name }}"></i> [{{ service.name }}]({{ service.url }}) - {{ service.username }}
+<a href="{{ service.url }}"><i id="{{ service.name | slugify }}" class="fa fa-2x fa-{{ service.name }}"></i></a>
 {% endfor %}
+</p>
+{% include styles.html %}
