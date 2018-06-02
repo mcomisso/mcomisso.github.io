@@ -9,7 +9,7 @@ redirect_from: /post/12
 
 # SQFeedbackGenerator 📳
 
-#### [Available on github <i class="fa fa-github"></i>](https://github.com/mcomisso/SQFeedbackGenerator)
+#### [Available on github <i class="fab fa-github"></i>](https://github.com/mcomisso/SQFeedbackGenerator)
 
 I'm spending my weekends building my app called [Squirrel](http://squirrelapp.rocks), and I wrote a simple class to take advantage of `AudioServicesPlaySystemSound` to provide an haptic vibration for certain scenarios (error, success, notification).
 

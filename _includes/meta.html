@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="Matteo Comisso">
-<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+<link rel="canonical" href="{{ site.url | append: page.url }}" />
 <link rel="icon" type="image/png" href="/favicon.png">
 
 <!--Apple homescreen icons-->
@@ -17,7 +17,8 @@
 <!-- Twitter Metadata -->
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@teomatteo89" />
-<meta name="twitter:image" content="{{site.url}}/images/icons/icon200x200.png" />
+<meta name="twitter:image" content="{{site.url | append: '/images/icons/icon200x200.png'}}" />
+
 {% if page.layout == 'post' %}
 <meta name="twitter:title" content="{{page.title}}" />
 <meta name="twitter:description" content="{{page.description}}" />
@@ -39,4 +40,4 @@
 <meta property="og:description"        content="Personal website of Matteo Comisso" />
 <meta property="og:type"               content="website" />
 {% endif %}
-<meta property="og:image"              content="{{site.url}}/images/icons/icon200x200.png" />
+<meta property="og:image"              content="{{site.url | append: '/images/icons/icon200x200.png'}}" />

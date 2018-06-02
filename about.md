@@ -1,73 +1,47 @@
---- 
-layout: page 
-title: About 
-description: About page 
+---
+layout: page
+title: About
+description: About page
 ---
 
 # Hello
 
-I'm a iOS developer in <a href="https://goo.gl/maps/qSTGhQfBvbS2" target="_blank"> London. </a>
+I'm an italian software developer based in [London](https://goo.gl/maps/qSTGhQfBvbS2){:target="_blank"}, :uk:.
 
-![ProfileImage](https://twitter.com/{{ site.about.services[1].username | remove: '@' }}/profile_image?size=original)
-          
-My current interests are server-side Swift and AR applications, but I constantly stay updated with the latest technologies, trying them myself as soon as possible.
-          
-Recently I posted something about {% assign post = site.posts | first %} {{ post.tags | sort | array_to_sentence_string }}: <a href="{{ post.url }}">{{ post.title }}</a>
+![ProfileImage]({{ site.url | append: '/images/about/profile_image.jpg' }})
+
+I work for VoucherCodes.co.uk (part of RetailMeNot :us:) as a iOS Software Engineer.
+
+{% assign post = site.posts | where: "layout","post" | first %}
+{% assign tags_sentence = post.tags | sort | array_to_sentence_string %}
+Recently I posted something about {{ tags_sentence }}: [{{ post.title }}]({{ post.url }}).
+
+### Want to get in touch? 
+
+[Send me an email](mailto:me@mcomisso.me)
+
+or  
+
+<p>
+{% for service in site.about.services %}
+  <a style="display: inline-block; width: 2em;" href="{{ service.url }}"><i id="{{ service.name | slugify }}" class="fab fa-2x fa-{{ service.name }}"></i> </a>
+{% endfor %}
+</p>
 
 ### I was involved in the making of these apps:
 
-<table>
-<thead>
-
-</thead>
-<tr>
-  <th>
-    App
-  </th>
-  <th>
-    Description
-  </th>
-  <th>
-    url
-  </th>
-</tr>
+<p>
 {% for app in site.data.works reversed %}
-  <tr>
-    <td>
-      <a href="{{ app.url }}">
-        <img src="{{ site.url }}{{ app.icon }}" alt="{{ app.name }} icon" style="border-radius: 15.625%;" />
-      </a>
-    </td>
-    
-    <td>
-      <div for="id{{ app.name }}">
-        {{ app.description }}
-      </div>
-    </td>
-
-    <td>
-      <p id="id{{app.name}}" style="text-align: center;">
-        <a href="{{ app.url }}">{{app.name}}</a>
-      </p>
-    </td>
-  </tr>
+  <a href="{{ app.url }}" style="display: inline-block; width: 4em;">
+    <img title="{{ app.name }}" alt="{{ app.name }} icon" src="{{ site.url | append: app.icon }}"  style="border-radius: 15.625%; width:100px" />
+  </a>
 {% endfor %}
-</table>
+</p>
 
 ### And I have a couple of open source repositories too
 
 {% for proj in site.data.github %}
-  <span id="id{{ proj.name }}" style="text-align: center;"><a href="{{ proj.url }}">{{proj.name}}</a> - {{ proj.description }}</span>
-{% endfor %}
-
-
-### Want to get in touch? 
-
-<a href="/contact">Send me an email</a> or use Intercom by pressing the bottom right button on this page.
-
-{% for service in site.about.services %}
-<a href="{{ service.url }}">
-  <i id="{{ service.name | slugify }}" class="fa fa-{{ service.name }}"></i>
-  <span class="mdl-chip__text">{{ service.name }}</span>
-</a>
+  <span id="id{{ proj.name }}" style="text-align: center;">
+    <a href="{{ proj.url }}">{{proj.name}}</a> - {{ proj.description }}
+  </span>
 {% endfor %}
