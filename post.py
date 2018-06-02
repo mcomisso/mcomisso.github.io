@@ -12,9 +12,9 @@ post_date = datetime.datetime.now()
 
 template = """---
 layout: micro
-categories: [micropost]
-tags: [microblog, thoughts]
-date: %s
+categories: ['micropost']
+tags: ['microblog', 'thoughts']
+date: '%s'
 ---
 %s
 """
@@ -50,7 +50,7 @@ def publish():
 
 
 if __name__ == '__main__':
-  text =  ''.join(sys.argv[1::])
+  text =  ' '.join(sys.argv[1::])
   (file, filename) = create_file()
   write_post(file, text)
   save(filename)

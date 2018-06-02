@@ -14,6 +14,8 @@ layout: default
 
     {% for post in site.posts %}
       {% if post.categories contains "micropost" %}
+    YESS
+    
       {{ post.content }}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y - %H:%M" }}</span>
