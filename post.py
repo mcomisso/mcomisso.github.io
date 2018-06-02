@@ -1,14 +1,14 @@
-#!/usr/local/bin/python
+#!/usr/local/bin/python3
 
 import subprocess
 import sys
 import os
 import string
 import datetime
+import hashlib
 
 DEFAULT_FOLDER = os.path.join(os.path.dirname(__file__), "_posts")
 post_date = datetime.datetime.now()
-
 
 template = """---
 layout: micro
@@ -19,10 +19,12 @@ date: %s
 %s
 """
 
+def md5_from_date(date):
+  return hashlib.md5(bytes(str(date), 'utf-8')).hexdigest()
 
 def create_file():
   """Create a file in the correct folder"""
-  filename = "%s.md" % str(post_date).replace(' ', '-')
+  filename = "%s-%s.md" % (str(post_date.date()), md5_from_date(post_date.time()))
   return (open(os.path.join(DEFAULT_FOLDER, filename), "w+"), filename)
 
 
@@ -48,7 +50,7 @@ def publish():
 
 
 if __name__ == '__main__':
-  text =  string.join(sys.argv[1::])
+  text =  ''.join(sys.argv[1::])
   (file, filename) = create_file()
   write_post(file, text)
   save(filename)
