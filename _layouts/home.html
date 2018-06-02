@@ -9,14 +9,8 @@ layout: default
   {{ content }}
 
   <ul class="post-list">
-
-    {{ site.posts | inspect }}
-
     {% for post in site.posts %}
       {% if post.categories contains "micropost" %}
-    YESS
-    
-      {{ post.content }}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y - %H:%M" }}</span>
         <h3>{{ post.content }}</h3>          
