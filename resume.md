@@ -28,15 +28,23 @@ Main developer and Co-Founder. I was in charge of choosing the technology stack 
 # Personal projects
 
 - This blog :tada:
-
+  `Jekyll` `github-pages` `Liquid`
   Built with [Jekyll](http://jekyllrb.com/) and hosted at [Github Pages](https://pages.github.com/)
   The first revision was something I decided to build almost from scratch using mdl-lite. After the deprecation of that library I decided to move to something minimal and with even less maintenance involved.
 
-- Home automation:
+- [Syncstart](http://syncstart.herokuapp.com)
+  `NodeJs` `socket.io`
 
-  Smart Home: A Raspberry Pi, one C.H.I.P., a couple of ESP8266 and a lot of sensors. I can control different lights, open the garage door, blast with IR TV/Audio surround and monitor temperature and security cameras. Everything is bridged to Siri and “custom made”, so I can control the system with voice commands.
+  A simple NodeJS web application that syncs a timer between 2 clients.  
+  Netflix &.. need to hit play at the same second?
 
-- [Hello Kiwi](https://github.com/mcomisso/hellokiwi)
+- Home automation  
+  `Raspberry Pi` `C.H.I.P.` `NodeJS`
+
+  A Raspberry Pi, one C.H.I.P., a couple of ESP8266 and a lot of sensors. I can control different lights, open the garage door, blast with IR TV/Audio surround and monitor temperature and security cameras. Everything is bridged to Siri and “custom made”, so I can control the system with voice commands.
+
+- [Hello Kiwi](https://github.com/mcomisso/hellokiwi)  
+  `Objective-C` `Swift` `Django`
 
   A simple iOS application built around iBeacon technology, for the [Kiwi team](http://exmachina.porscheitalia.com/ita/team-scheda/kiwi-1).  
   Was built for the [Ex-Machina camp](http://www.h-farm.com/porsche-italia-lancia-il-progetto-ex-machina/) of _H-farm Ventures_, to present and demonstrate the iBeacon technology to the public.  
