@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Postssss</h1>
+  <h1 class="page-heading">What's new?</h1>
   
   {{ content }}
 
@@ -14,7 +14,7 @@ layout: default
       {% if post.categories contains "micropost" %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y - %H:%M" }}</span>
-        <h3>{{ post.content }}</h3>          
+        <h3>{{ post.content }}</h3>
       </li>
 
       {% else %}
@@ -26,12 +26,12 @@ layout: default
           <h2>
             <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
           </h2>
+          {{ post.excerpt | strip_html | truncatewords: 20 }}
         </li>
       {% endif %}
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.json" | relative_url }}">via JSON</a></p>
+  <p class="rss-subscribe"> <i class="fab fa-rss"></i> Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a> or <a href="{{ "/feed.json" | relative_url }}">via JSON</a> </p>
 
 </div>
