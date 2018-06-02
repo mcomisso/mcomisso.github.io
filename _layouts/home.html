@@ -5,8 +5,6 @@ layout: default
 <div class="home">
 
   <h1 class="page-heading">What's new?</h1>
-  
-  {{ content }}
 
   <ul class="post-list">
 
@@ -14,14 +12,18 @@ layout: default
       {% if post.categories contains "micropost" %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y - %H:%M" }}</span>
-        <h3>{{ post.content }}</h3>
+        {{ post.content }}
       </li>
 
       {% else %}
           
       <li>
-          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}      
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+          {% assign words_count = post.content | number_of_words %}
+          {% assign reading_time = words_count | plus: 0.0 | divided_by: 180 | ceil %}
+
+          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          <span class="post-meta">{{ post.date | date: date_format }} - {{ reading_time | append: "' read" }}</span>
 
           <h2>
             <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
