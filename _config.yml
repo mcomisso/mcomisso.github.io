@@ -19,7 +19,6 @@ plugins:
 # Generics #
 ############
 language: en
-url: "http://mcomisso.me"
 title: Matteo Comisso
 email: me@mcomisso.me
 description: >
@@ -33,39 +32,39 @@ github_username:  mcomisso
 # SEO SPECIFIC
 twitter:
   username: teomatteo89
-author:
-  name: Matteo
-  url: http://mcomisso.me
-  twitter: teomatteo89
+  card: summary
 social:
-  links: ["https://github.com/mcomisso", "https://twitter.com/teomatteo89", "https://facebook.com/100003457918621", "https://linkedin.com/mcomisso", "https://plus.google.com/u/0/+Matteocomisso", "https://medium.com/@mcomisso"]
+  name: Matteo Comisso
+  links:
+    - https://github.com/mcomisso
+    - https://twitter.com/teomatteo89
+    - https://facebook.com/100003457918621
+    - https://linkedin.com/mcomisso
+    - https://plus.google.com/u/0/+Matteocomisso
+    - https://medium.com/@mcomisso
+    - https://keybase.io/mcomisso
+
 
 about:
-  name: "Matteo Comisso"
-  email: "me@mcomisso.me"
-  uri: "https://twitter.com/teomatteo89"
-  bio: ""
   services:
     -
       name: "github"
-      username: "mcomisso"
       url: "https://github.com/mcomisso"
     -
       name: "twitter"
-      username: "teomatteo89"
       url: "https://twitter.com/teomatteo89"
     -
       name: "facebook"
-      username: "matteocomisso"
       url: "https://facebook.com/100003457918621"
     -
-      name: "linkedin"
-      username: "mcomisso"
+      name: "linkedin" 
       url: "https://linkedin.com/mcomisso"
     -
       name: "medium"
-      username: "mcomisso"
       url: "https://medium.com/@mcomisso"
+    -
+      name: keybase
+      url: https://keybase.io/mcomisso
 
 # Permalinks
 permalink: /:year/:month/:day/:title
