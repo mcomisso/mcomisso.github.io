@@ -1,61 +1,42 @@
---- 
-layout: page 
-title: About 
-description: About page 
+---
+layout: page
+title: About
+description: About page
 ---
 
 # Hello
 
-I'm a iOS developer in <a href="https://goo.gl/maps/qSTGhQfBvbS2" target="_blank"> London. </a>
+I'm an italian software developer based in [London](https://goo.gl/maps/qSTGhQfBvbS2){:target="_blank"}, :uk:.
 
-![ProfileImage](https://twitter.com/{{ site.twitter_username }}/profile_image?size=original)
-          
-I work for VoucherCodes.co.uk (or RetailMeNot UK :uk:) as a iOS Software Engineer.  
-          
-Recently I posted something about {% assign post = site.posts | first %} {{ post.tags | sort | array_to_sentence_string }}: <a href="{{ post.url }}">{{ post.title }}</a>
+![ProfileImage]({{ site.url | append: '/images/about/profile_image.jpg' }})
+
+I work for VoucherCodes.co.uk (part of RetailMeNot :us:) as a iOS Software Engineer.
+
+{% assign post = site.posts | where: "layout","post" | first %}
+{% assign tags_sentence = post.tags | sort | array_to_sentence_string %}
+Recently I posted something about {{ tags_sentence }}: [{{ post.title }}]({{ post.url }}).
 
 ### Want to get in touch? 
 
 [Send me an email](mailto:me@mcomisso.me)
+
 or  
+
 <p>
 {% for service in site.about.services %}
   <a style="display: inline-block; width: 2em;" href="{{ service.url }}"><i id="{{ service.name | slugify }}" class="fab fa-2x fa-{{ service.name }}"></i> </a>
 {% endfor %}
 </p>
-{% include styles.html %}
 
 ### I was involved in the making of these apps:
 
-<table>
-<thead>
-
-</thead>
-<tr>
-  <th> App </th>
-  <th> Description </th>
-  <th> url </th>
-</tr>
+<p>
 {% for app in site.data.works reversed %}
-  <tr>
-    <td>
-      <a href="{{ app.url }}">
-        <img src="{{ site.url | append: app.icon }}" alt="{{ app.name }} icon" style="border-radius: 15.625%;" />
-      </a>
-    </td>
-    <td>
-      <p for="id{{ app.name }}">
-        {{ app.description }}
-      </p>
-    </td>
-    <td>
-      <p id="id{{ app.name }}">
-        <a href="{{ app.url }}">{{ app.name }}</a>
-      </p>
-    </td>
-  </tr>
+  <a href="{{ app.url }}" style="display: inline-block; width: 4em;">
+    <img title="{{ app.name }}" alt="{{ app.name }} icon" src="{{ site.url | append: app.icon }}"  style="border-radius: 15.625%; width:100px" />
+  </a>
 {% endfor %}
-</table>
+</p>
 
 ### And I have a couple of open source repositories too
 
