@@ -91,9 +91,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - src
-  - node_modules
   - package.json
-  - Gruntfile.js
-  - vendor
-  - bower.json
   - post.py
