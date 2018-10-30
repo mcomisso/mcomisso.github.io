@@ -35,19 +35,23 @@ let client = new Twitter({
   access_token_secret: token_secret
 })
 
-var params = {
-  user_id: process.env.TWITTER_USER_ID
-};
 
+function fetchNewTweets() {
+  var params = {
+    user_id: process.env.TWITTER_USER_ID
+  };
 
-client.get('statuses/user_timeline', params, function (error, tweets, response) {
-  var dbtweets = db.getCollection("tweets");
+  client.get('statuses/user_timeline', params, function (error, tweets, response) {
+    var dbtweets = db.getCollection("tweets");
 
-  tweets.forEach(tweet => {
-    try {
-      dbtweets.insert(tweet);
-    } catch (err) {}
+    tweets.forEach(tweet => {
+      try {
+        dbtweets.insert(tweet);
+      } catch (err) {}
+    });
+
+    db.saveDatabase();
   });
+}
 
-  db.saveDatabase();
-});
+setInterval(fetchNewTweets, 60000 * 60);
