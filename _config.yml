@@ -40,10 +40,7 @@ social:
     - https://twitter.com/teomatteo89
     - https://facebook.com/100003457918621
     - https://linkedin.com/mcomisso
-    - https://plus.google.com/u/0/+Matteocomisso
-    - https://medium.com/@mcomisso
     - https://keybase.io/mcomisso
-
 
 about:
   services:
@@ -59,9 +56,6 @@ about:
     -
       name: "linkedin" 
       url: "https://linkedin.com/mcomisso"
-    -
-      name: "medium"
-      url: "https://medium.com/@mcomisso"
     -
       name: keybase
       url: https://keybase.io/mcomisso
