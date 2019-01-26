@@ -20,7 +20,7 @@ plugins:
 ############
 language: en
 title: Matteo Comisso
-email: me@mcomisso.me
+email: matteo@mcomisso.me
 description: >
   A small collection of thoughts, ideas and software experiments from an iOS software developer perspective.
 baseurl: "" # the subpath of your site, e.g. /blog
