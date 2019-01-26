@@ -29,9 +29,13 @@
   url: "http://geteversnap.com"
   description: "Eversnap iPhone can help any event to collect all their guests' photos and videos in one online album."
   icon: "/images/apps/Eversnap.png"
-
 -
   name: "VoucherCodes.co.uk"
   url: "https://vouchercodes.co.uk"
   description: "VoucherCodes is a leading UK savings destination that brings together vouchers, deals and sales for thousands of leading stores."
   icon: "/images/apps/VC.png"
+-
+  name: "The Outnet"
+  url: "https://theoutnet.com"
+  description: "The Outnet is a digital outlet store that carries 350+ luxury fashion designers."
+  icon: "/images/apps/TON.jpg"
