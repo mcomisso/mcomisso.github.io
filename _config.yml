@@ -77,6 +77,8 @@ theme: minima
 
 highlighter: rouge
 
+google_analytics: UA-NNNNNNNN-N
+
 # Files to exclude, generic
 exclude:
   - README.md
