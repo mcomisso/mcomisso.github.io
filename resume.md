@@ -7,7 +7,7 @@ description: Resume, Matteo Comisso
 # Working experience
 
 **[YNAP (YOOX NET-A-PORTER group)](https://theoutnet.com), LONDON [NOV 2017 - CURRENT]**  
-I work on the iOS app **THE OUTNET**, the outlet app of YNAP. It has a worldwide user pool, with a various depth of features. I am a senior developer of a team of 4, I support the learning curve of juniors and coordination of tasks.
+I work on the iOS app **THE OUTNET**, the outlet app of YNAP. It has a worldwide user pool, with a various depth of features. I am a senior developer in a team of 4, I support the learning curve of juniors and coordination of tasks.
 
 **[VOUCHERCODES.CO.UK](https://vouchercodes.co.uk), LONDON[JUL, 2017 — NOV 2018]**  
 `swift` `objective-c` `xcode server` `jenkins`  
