@@ -67,7 +67,7 @@ label.themeColor // UIColor.green
 > Delegation pattern: An object handles a request by delegating it to a second object
 
 A very common example is the `UITableViewDelegate` protocol:  
-we declare a new class or implement it directy on the UIViewController, and extend that protocol's methods to allow the tableview to use it as its own delegate.
+usually we implmenet the methods of that protocol into our own UIViewController, to let the tableView delegate some logic.
 
 ```swift
 class MyTableViewDelegate: NSObject, UITableViewDelegate {
@@ -177,7 +177,8 @@ hero.run()
 
 # Use protocol composition
 
-Sometimes it's easy to identify behaviors that can be logically linked together. We might want a shortcut to call all the hero actions, or all the zombie actions. Or maybe we want to have a collection of objects that share the same multiple behaviors, like `run()`.
+Sometimes it's easy to identify behaviors that can be logically linked together. For example, we cannot run if we don't know how to walk.   
+We might want a shortcut to call all the hero actions, or all the zombie actions.
 
 ```swift
 typealias HeroActions = HasRunAbility & HasSpeakAbility & Movable
