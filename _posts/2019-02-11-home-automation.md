@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "#14 home automation"
+title: "#14 - home automation"
 description: "Home automation and domotics"
 categories: [hobbies, domotics]
 tags: [home, hass, domotics, esp]
