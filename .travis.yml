@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "6"
+  - "lts/*"
 
 before_install:
   - ruby --version
@@ -14,7 +14,6 @@ before_script:
   
 script: 
   - bundle exec jekyll build
-  # - bundle exec htmlproofer
 
 cache: bundler
 sudo: false
