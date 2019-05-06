@@ -2,34 +2,13 @@
 
 require('dotenv').config()
 const _ = require('lodash');
-
+var moment = require('moment');
 var fs = require('fs');
+
 var Twitter = require('twitter');
-const loki = require('lokijs');
 
-// var db = new loki('twitter.json', {
-//   autoload: true,
-//   autoloadCallback: databaseInitialize,
-//   autosave: true,
-//   autosaveInterval: 4000
-// });
-
-// Global access for collection
-var tweetsCollection = null;
-
-// function databaseInitialize() {
-//   var entries = db.getCollection("tweets");
-//   if (entries === null) {
-//     entries = db.addCollection("tweets", {
-//       unique: ['created_at']
-//     });
-//   }
-
-//   tweetsCollection = entries;
-// }
-
-const api_key = process.env.TWITTER_API_KEY
-const api_secret = process.env.TWITTER_API_SECRET
+const api_key = process.env.CONSUMER_API_KEY
+const api_secret = process.env.CONSUMER_API_SECRET
 const access_token = process.env.TWITTER_ACCESS_TOKEN
 const token_secret = process.env.TWITTER_TOKEN_SECRET
 
@@ -42,47 +21,39 @@ let client = new Twitter({
 
 const startupDate = Date.now();
 
-function getTweetsFromDate(date) {  
-
+function getTweetsFromDate(date) {
   console.log(date);
 }
 
 function datesOfPosts() {
   var posts = _.map(fs.readdirSync('./_posts'), (element) => { 
-    fs.readFileSync('./_posts/${element}');
-  });
-  return 
-  posts.sort(function(a, b) {
-    return fs.statSync(posts + a).mtime.getTime() - 
-           fs.statSync(posts + b).mtime.getTime();
+    console.log(element);
+    fs.readFileSync('./_posts/'+ element);
   });
 }
 
 function fetchNewTweets() {
-  var params = {
-    user_id: process.env.TWITTER_USER_ID
-  };
   
-
-  var lastPost = readPosts();
-
-  // var dbtweets = db.getCollection("tweets");
+  var params = {
+    user_id: process.env.TWITTER_USER_ID,
+  };
 
   client.get('statuses/user_timeline', params, function (error, tweets, response) {
-
-    tweets.forEach(tweet => {
-      try {
-        // dbtweets.insert(tweet);
-
-      } catch (err) { console.error(err); }
-    });
-
-    // db.saveDatabase();
+    if (error) {
+      console.error(error);
+    } else {
+      tweets.forEach(tweet => {
+        try {
+          if (tweet.in_reply_to_status_id != null) { return }
+          let date = moment(tweet.created_at, "EEE MMM dd HH:mm:ss Z yyyy");
+          console.log(datesOfPosts());
+          console.log(tweet);
+        } catch (err) { console.error(err); }
+      });
+    }
   });
   
   getTweetsFromDate(startupDate);
-  
 }
 
 fetchNewTweets();
-setInterval(fetchNewTweets, 60000 * 60);

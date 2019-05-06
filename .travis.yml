@@ -2,17 +2,17 @@ language: node_js
 node_js:
   - "lts/*"
 
-before_install:
-  - ruby --version
-
 install:
   - rvm install 2.4.2
   - gem install bundler
 
 before_script:  
+  - git config --global user.email "matteo.comisso@me.com"
+  - git config --global user.name "Travis-CI"
   - bundle install
   
 script: 
+  - node tweet-importer/index.js
   - bundle exec jekyll build
 
 cache: bundler
