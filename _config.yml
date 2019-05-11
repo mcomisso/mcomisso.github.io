@@ -73,7 +73,7 @@ kramdown:
   input: GFM
   auto_ids: true
 
-theme: jekyll-theme-tactile
+theme: jekyll-theme-hacker
 
 highlighter: rouge
 
