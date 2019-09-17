@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^6.1.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "lokijs": "^1.5.5",
     "twitter": "^1.7.1"
   }
