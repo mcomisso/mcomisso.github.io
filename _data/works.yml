@@ -39,3 +39,8 @@
   url: "https://theoutnet.com"
   description: "The Outnet is a digital outlet store that carries 350+ luxury fashion designers."
   icon: "/images/apps/TON.jpg"
+-
+  name: "Reco"
+  url: "/apps"
+  description: "Reco is a utility app that allows you to conveniently transcribe audio messages from messaging applications."
+  icon: "/images/apps/Reco.png"
