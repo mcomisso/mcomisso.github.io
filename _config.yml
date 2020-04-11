@@ -57,7 +57,7 @@ about:
       name: "linkedin" 
       url: "https://linkedin.com/mcomisso"
     -
-      name: keybase
+      name: "keybase"
       url: https://keybase.io/mcomisso
 
 # Permalinks
@@ -73,11 +73,9 @@ kramdown:
   input: GFM
   auto_ids: true
 
-theme: minima
-
 highlighter: rouge
 
-google_analytics: UA-NNNNNNNN-N
+# google_analytics: UA-NNNNNNNN-N
 
 # Files to exclude, generic
 exclude:
