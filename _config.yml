@@ -75,6 +75,8 @@ kramdown:
 
 highlighter: rouge
 
+theme: minima
+
 # google_analytics: UA-NNNNNNNN-N
 
 # Files to exclude, generic
