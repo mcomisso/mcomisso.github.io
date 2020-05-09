@@ -77,7 +77,8 @@ highlighter: rouge
 
 theme: minima
 
-# google_analytics: UA-NNNNNNNN-N
+# Fake number, just to trigger minima's GA _include.
+google_analytics: UA-NNNNNNNN-N 
 
 # Files to exclude, generic
 exclude:

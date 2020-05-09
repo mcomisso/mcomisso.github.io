@@ -262,6 +262,7 @@ DEPENDENCIES
   jekyll-compose
   jekyll-feed
   jekyll-include-cache
+  jekyll-mentions
   tzinfo-data
 
 BUNDLED WITH
