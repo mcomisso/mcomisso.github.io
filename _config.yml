@@ -57,7 +57,7 @@ about:
       name: "linkedin" 
       url: "https://linkedin.com/mcomisso"
     -
-      name: keybase
+      name: "keybase"
       url: https://keybase.io/mcomisso
 
 # Permalinks
@@ -73,11 +73,12 @@ kramdown:
   input: GFM
   auto_ids: true
 
-theme: minima
-
 highlighter: rouge
 
-google_analytics: UA-NNNNNNNN-N
+theme: minima
+
+# Fake number, just to trigger minima's GA _include.
+google_analytics: UA-NNNNNNNN-N 
 
 # Files to exclude, generic
 exclude:
@@ -91,3 +92,5 @@ exclude:
   - post.py
 
 show_excerpts: enabled
+
+jekyll-mentions: https://twitter.com

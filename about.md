@@ -8,7 +8,7 @@ description: About page
 
 I'm an italian software developer based in [London](https://goo.gl/maps/qSTGhQfBvbS2){:target="_blank"}, :uk:.
 
-![ProfileImage]({{ site.url | append: '/images/about/profile_image.jpg' }})
+{% avatar mcomisso size=500 %}
 
 I work for YNAP, as Senior iOS developer in "The Outnet" iOS team.
 
