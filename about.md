@@ -10,7 +10,7 @@ I'm an italian software developer based in [London](https://goo.gl/maps/qSTGhQfB
 
 ![ProfileImage]({{ site.url | append: '/images/about/profile_image.jpg' }})
 
-I work for VoucherCodes.co.uk (part of RetailMeNot :us:) as a iOS Software Engineer.
+I work for YNAP, as Senior iOS developer in "The Outnet" iOS team.
 
 {% assign post = site.posts | where: "layout","post" | first %}
 {% assign tags_sentence = post.tags | sort | array_to_sentence_string %}
@@ -18,7 +18,7 @@ Recently I posted something about {{ tags_sentence }}: [{{ post.title }}]({{ pos
 
 ### Want to get in touch? 
 
-[Send me an email](mailto:me@mcomisso.me)
+[Send me an email](mailto:{{ site.email }})
 
 or  
 
@@ -33,7 +33,7 @@ or
 <p>
 {% for app in site.data.works reversed %}
   <a href="{{ app.url }}" style="display: inline-block; width: 4em;">
-    <img title="{{ app.name }}" alt="{{ app.name }} icon" src="{{ site.url | append: app.icon }}"  style="border-radius: 15.625%; width:100px" />
+    <img title="{{ app.name }}" alt="{{ app.name }} icon" src="{{ site.url | append: app.icon }}"  style="border-radius: 15.625%; width:100px; border: 1px; border-color: #ccc; border-style: solid;" />
   </a>
 {% endfor %}
 </p>

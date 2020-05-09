@@ -20,7 +20,7 @@ plugins:
 ############
 language: en
 title: Matteo Comisso
-email: me@mcomisso.me
+email: matteo@mcomisso.me
 description: >
   A small collection of thoughts, ideas and software experiments from an iOS software developer perspective.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -40,10 +40,7 @@ social:
     - https://twitter.com/teomatteo89
     - https://facebook.com/100003457918621
     - https://linkedin.com/mcomisso
-    - https://plus.google.com/u/0/+Matteocomisso
-    - https://medium.com/@mcomisso
     - https://keybase.io/mcomisso
-
 
 about:
   services:
@@ -60,10 +57,7 @@ about:
       name: "linkedin" 
       url: "https://linkedin.com/mcomisso"
     -
-      name: "medium"
-      url: "https://medium.com/@mcomisso"
-    -
-      name: keybase
+      name: "keybase"
       url: https://keybase.io/mcomisso
 
 # Permalinks
@@ -79,9 +73,11 @@ kramdown:
   input: GFM
   auto_ids: true
 
+highlighter: rouge
+
 theme: minima
 
-highlighter: rouge
+# google_analytics: UA-NNNNNNNN-N
 
 # Files to exclude, generic
 exclude:
@@ -91,10 +87,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - src
-  - node_modules
   - package.json
-  - Gruntfile.js
-  - vendor
-  - bower.json
   - post.py
-  - keybase.txt
+
+show_excerpts: enabled
