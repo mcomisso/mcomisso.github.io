@@ -91,3 +91,5 @@ exclude:
   - post.py
 
 show_excerpts: enabled
+
+jekyll-mentions: https://twitter.com
