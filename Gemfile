@@ -7,6 +7,7 @@ group :jekyll_plugins do
   gem "jekyll-compose"
   gem "jekyll-feed"
   gem "jekyll-include-cache"
+  gem 'jekyll-mentions'
 end
 
 #gem 'travis'
