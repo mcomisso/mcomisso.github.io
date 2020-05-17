@@ -26,7 +26,6 @@
   $table-header-border: lighten($background-color, 21%) !default;
   $table-border-color: lighten($background-color, 21%) !default;
 
-
   $background-color-dark: #181818;
   $link-color-dark: #5970bb;
   $text-color-dark: #bbb;
@@ -34,9 +33,14 @@
   body {
     background-color: $background-color-dark; 
     color: $text-color-dark;
+
+    table {
+      color: $text-color-dark;
+    }
     
     table th { 
       background-color: lighten($color: $background-color-dark, $amount: 4%);
+      color: $text-color-dark;
     }
     
     a {
