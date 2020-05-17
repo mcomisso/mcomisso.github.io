@@ -7,7 +7,7 @@ env:
 
 script:
   - bundle exec gem update
-  - bundle exec gem build
+  - bundle exec jekyll build
   - bundle exec htmlproofer ./_site --disable-external
 
 cache: bundler
