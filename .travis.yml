@@ -1,10 +1,9 @@
 language: ruby
-rvm:
-  - 2.6.3
+rvm: 2.6.3
 
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true 
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true 
 
 - script:
   - bundle exec gem update
@@ -18,7 +17,7 @@ sudo: false
 addons:
   apt:
     packages:
-    - libcurl4-openssl-dev
+      - libcurl4-openssl-dev
   code_climate:
     repo_token:
       secure: DvOLvMxxSAPiY5H3Y4vNd2HG2BKa72ws/O/t4VFUme2AL3ABhiU1BgioGRM83lg4irv7azn1YZT79GglVv3yM0LLYa21829+juKb/bLe6LsyJDwlOfatDwy9lS4eKTmCVA/uM7NbY9t/pIrdPXw1kPkbJIGNuffjmubDXeFNtWQJRT7LM581EISXV/p6PryqzxdtMtU2eQuUC8CxcIMp9DN5LgnUV/7sGNW/dvS/BZR9XRH60PoCSkFr98T3r5R3hBHviBw4b8FBcH8RygxYRj/+YNBxAeli8u9iXrP5/URBtjLiUIwtGyNi0xY2LXX+Qar4fNwHfECNvwK8xR5lW75H+LNuj/Y/C7XOZ7K9KMtS8WwJpbq2uXC0VdNZbjQ4m/+3C2P1Z2HfsAhwb6pWlR62FSIkzXakh23NyrsYZnNKCmGb07xKnZd+c6KJuoO6/ZIpczqXI8ZXfGmjpMCdWak7HeWkThOy3lG+uIlV5UdXhnAeLHKS2rLed7RUF6XUh70r0CgiqLXsNLKIFEybxiJS3SluKN+Mv330DC83bySetLaRgy3U0mSXwJPNKKvqgAx9WGMp9UPCZYGchx7UvJPY1kv3KT5riqVBRlR2Nlso0SW18xrh9/fe885tM7tuTJooqAxGdiflfDu6trscnht8s4CY7/RZTbj0CP4tdVo=
