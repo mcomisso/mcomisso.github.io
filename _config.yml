@@ -89,6 +89,7 @@ exclude:
   - src
   - package.json
   - post.py
+  - tweet-importer
 
 show_excerpts: enabled
 
