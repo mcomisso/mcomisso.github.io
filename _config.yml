@@ -90,7 +90,7 @@ exclude:
   - package.json
   - post.py
   - tweet-importer
-  - [vendor]
+  - vendor
 
 show_excerpts: enabled
 
