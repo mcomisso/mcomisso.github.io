@@ -6,7 +6,6 @@ env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true 
 
 script:
-  - bundle exec gem update
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site --disable-external
 
