@@ -7,7 +7,7 @@ env:
 
 script:
   - bundle exec jekyll build
-  - bundle exec htmlproofer ./_site --disable-external
+  - bundle exec htmlproofer --check-html --disable-external --assume-extension --internal-domains localhost:4000 _site
 
 cache: bundler
 
