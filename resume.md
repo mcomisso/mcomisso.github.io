@@ -48,6 +48,5 @@ I worked with various companies, focusing mainly on adding functionalities to th
 - [Hello Kiwi](https://github.com/mcomisso/hellokiwi)  
   `Objective-C` `Swift` `Django`
 
-  A simple iOS application built around iBeacon technology, for the [Kiwi team](http://exmachina.porscheitalia.com/ita/team-scheda/kiwi-1).  
-  Was built for the [Ex-Machina camp](http://www.h-farm.com/porsche-italia-lancia-il-progetto-ex-machina/) of _H-farm Ventures_, to present and demonstrate the iBeacon technology to the public.  
+  A simple iOS application built around iBeacon technology was built for the [Ex-Machina camp](http://www.h-farm.com/porsche-italia-lancia-il-progetto-ex-machina/) of _H-farm Ventures_, to present and demonstrate the iBeacon technology to the public.  
   Backend hosted on parse.com.
