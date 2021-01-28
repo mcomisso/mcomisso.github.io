@@ -1,7 +1,4 @@
 ---
-layout: page
-title: Vinyly
-description: Vinyly privacy policy
 ---
 
 
