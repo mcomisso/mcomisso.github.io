@@ -4,10 +4,6 @@ title: Reco
 description: Reco, a small 
 ---
 
-
-# Reco
-
-
 ![Reco](/images/apps/Reco.png)
 
 Another app hits the store!
