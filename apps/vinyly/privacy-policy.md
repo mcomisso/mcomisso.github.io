@@ -1,6 +1,6 @@
 ---
+permalink: "/vinyly/privacy-policy"
 ---
-
 
 // Generated from https://app-privacy-policy-generator.firebaseapp.com
 
