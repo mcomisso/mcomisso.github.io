@@ -41,6 +41,11 @@
   icon: "/images/apps/TON.jpg"
 -
   name: "Reco"
-  url: "/apps"
+  url: "/apps/reco"
   description: "Reco is a utility app that allows you to conveniently transcribe audio messages from messaging applications."
   icon: "/images/apps/Reco.png"
+-
+  name: "Vinyly"
+  url: "/apps/vinyly"
+  description: "Vinyly is a Discogs client, built in SwiftUI. It allows to search for records and manage them, on iOS, macOS, and iPadOS."
+  icon: "/images/apps/Vinyly.png"
