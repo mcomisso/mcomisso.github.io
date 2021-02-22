@@ -13,11 +13,12 @@ images:
     title: Search
 ---
 
-
 <img style="width: 33%" src="/images/apps/Vinyly.png" alt="App icon"/>
 
 > Vinyly is a Discogs client, built completely in SwiftUI.  
 > It gives you a fresh view over your collection, and the ability to use Discogs' vast database.
+
+#### [Download on appstore](https://apps.apple.com/gb/app/vinyly/id1547173908)
 
 ### A few screenshots
 
