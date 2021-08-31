@@ -10,7 +10,7 @@ I'm an italian software developer based in [London](https://goo.gl/maps/qSTGhQfB
 
 {% avatar mcomisso size=500 %}
 
-I work for YNAP, as Senior iOS developer in "The Outnet" iOS team.
+I work for Skyscanner, as Senior iOS developer in "UX Enablement" iOS team. We deal with the app architecture, frameworks, compile time, etc.
 
 {% assign post = site.posts | where: "layout","post" | first %}
 {% assign tags_sentence = post.tags | sort | array_to_sentence_string %}
