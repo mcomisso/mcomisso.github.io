@@ -25,19 +25,19 @@ description: >
   A small collection of thoughts, ideas and software experiments from an iOS software developer perspective.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: http://mcomisso.me
-twitter_username: teomatteo89
+twitter_username: comismatt
 github_username:  mcomisso
 
 ############
 # SEO SPECIFIC
 twitter:
-  username: teomatteo89
+  username: comismatt
   card: summary
 social:
   name: Matteo Comisso
   links:
     - https://github.com/mcomisso
-    - https://twitter.com/teomatteo89
+    - https://twitter.com/comismatt
     - https://facebook.com/100003457918621
     - https://linkedin.com/mcomisso
     - https://keybase.io/mcomisso
@@ -49,7 +49,7 @@ about:
       url: "https://github.com/mcomisso"
     -
       name: "twitter"
-      url: "https://twitter.com/teomatteo89"
+      url: "https://twitter.com/comismatt"
     -
       name: "facebook"
       url: "https://facebook.com/100003457918621"
