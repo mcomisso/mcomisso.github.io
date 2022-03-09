@@ -8,7 +8,7 @@ layout: default
 
   <ul class="post-list">
 
-    {% for post in site.posts %}
+    {% for post in site.posts limit:10 %}
       {% if post.categories contains "micropost" %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y - %H:%M" }}</span>
@@ -32,7 +32,16 @@ layout: default
         </li>
       {% endif %}
     {% endfor %}
+
+    <li>
+      <h2>
+        <a href="">See all posts</a>
+      </h2>
+      
+    </li>
   </ul>
+
+  
 
   <p class="rss-subscribe"> <i class="fas fa-rss-square"></i> Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a> or <a href="{{ "/feed.json" | relative_url }}">via JSON</a> </p>
 
