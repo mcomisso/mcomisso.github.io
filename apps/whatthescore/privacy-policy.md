@@ -1,3 +1,7 @@
+---
+permalink: "/whatthescore/privacy-policy"
+---
+
 <!DOCTYPE html>
     <html>
     <head>
