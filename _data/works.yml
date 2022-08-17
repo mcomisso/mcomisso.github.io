@@ -49,3 +49,13 @@
   url: "/apps/vinyly"
   description: "Vinyly is a Discogs client, built in SwiftUI. It allows to search for records and manage them, on iOS, macOS, and iPadOS."
   icon: "/images/apps/Vinyly.png"
+-
+  name: "Skyscanner"
+  url: "https://skyscanner.net"
+  description: "Skyscanner is a metasearch engine and travel agency."
+  icon: "/images/apps/Skyscanner.png"
+-
+  name: "Crypto.com"
+  url: "https://crypto.com/exchange"
+  description: "Crypto.com is a cryptocurrency exchange company."
+  icon: "/images/apps/Cryptocom.jpg"

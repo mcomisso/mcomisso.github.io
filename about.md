@@ -4,13 +4,13 @@ title: About
 description: About page
 ---
 
-# Hello
+# Hello | Ciao
 
 I'm an italian software developer based in [London](https://goo.gl/maps/qSTGhQfBvbS2){:target="_blank"}, :uk:.
 
 {% avatar mcomisso size=500 %}
 
-I work for Skyscanner, as Senior iOS developer in "UX Enablement" iOS team. We deal with the app architecture, frameworks, compile time, etc.
+I work for Crypto.com on the Exchange app, as Senior iOS developer.
 
 {% assign post = site.posts | where: "layout","post" | first %}
 {% assign tags_sentence = post.tags | sort | array_to_sentence_string %}
