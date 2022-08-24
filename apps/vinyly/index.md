@@ -2,6 +2,7 @@
 layout: page
 title: Vinyly
 description: A fresh view on Discogs
+appId: id1547173908
 images:
   - image_path: /images/apps/vinyly/DetailDark.png
     title: Detail dark
@@ -12,8 +13,6 @@ images:
   - image_path: /images/apps/vinyly/Search.png
     title: Search
 ---
-
-<meta name="apple-itunes-app" content="app-id=id1547173908">
 
 <img style="width: 33%" src="/images/apps/Vinyly.png" alt="App icon"/>
 

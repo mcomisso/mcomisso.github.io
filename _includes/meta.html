@@ -41,3 +41,9 @@
 <meta property="og:type"               content="website" />
 {% endif %}
 <meta property="og:image"              content="{{site.url | append: '/images/icons/icon200x200.png'}}" />
+
+{% if page.appId %}
+<!-- Apple App ID-->
+
+<meta name="apple-itunes-app" content="app-id={{ page.appId }}">
+{% endif %}
