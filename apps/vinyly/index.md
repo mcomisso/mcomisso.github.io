@@ -13,6 +13,8 @@ images:
     title: Search
 ---
 
+<meta name="apple-itunes-app" content="app-id=id1547173908">
+
 <img style="width: 33%" src="/images/apps/Vinyly.png" alt="App icon"/>
 
 > Vinyly is a Discogs client, built completely in SwiftUI.  
