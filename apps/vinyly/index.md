@@ -2,7 +2,7 @@
 layout: page
 title: Vinyly
 description: A fresh view on Discogs
-appId: id1547173908
+appId: 1547173908
 images:
   - image_path: /images/apps/vinyly/DetailDark.png
     title: Detail dark
