@@ -16,4 +16,3 @@ node_modules
 .tmp
 .sass-cache
 /.vscode
-/twitter.json
