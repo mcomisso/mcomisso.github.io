@@ -42,6 +42,10 @@
       background-color: lighten($color: $background-color-dark, $amount: 4%);
       color: $text-color-dark;
     }
+
+    tr:nth-child(2n) {
+      background-color: lighten($color: $background-color-dark, $amount: 8%);
+    }
     
     a {
       color: $link-color-dark;
