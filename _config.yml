@@ -26,7 +26,7 @@ email: matteo@mcomisso.me
 description: >
   A small collection of thoughts, ideas and software experiments from an iOS software developer perspective.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://mcomisso.me
+# url: https://mcomisso.me
 twitter_username: comismatt
 github_username:  mcomisso
 
@@ -44,14 +44,14 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: A small collection of thoughts, ideas and software experiments from an iOS software developer perspective.
 
 description: >- # used by seo meta and the atom feed
   A small collection of thoughts, ideas and software experiments from an iOS software developer perspective.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://mcomisso.me"
+url: ""
 
 github:
   username: mcomisso # change to your github username
@@ -100,10 +100,10 @@ theme_mode: # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: "https://chirpy-img.netlify.app"
+# img_cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/commons/avatar.jpg"
+avatar: "/assets/img/favicons/mstile-150x150.png"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -146,7 +146,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "https://mcomisso.me"
+baseurl: ""
 
 # ------------ The following options are not recommended to be modified ------------------
 
