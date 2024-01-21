@@ -79,7 +79,7 @@ And yes, emojis. :tada:
 
 The full `pass.json` here following:
 
-{% gist mcomisso/8f7fda5a672e02171989051da72f2a2c %}
+<!-- {% gist mcomisso/8f7fda5a672e02171989051da72f2a2c %} -->
 
 The directory structure will have this hierarchy:
 

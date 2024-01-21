@@ -1,18 +1,22 @@
-
-# Jekyll Gitignore
-_site/
-_drafts/
-.jekyll-metadata
-
-# Bundler executables stubs
+# Bundler cache
 .bundle
-bin
+vendor
+Gemfile.lock
 
-# OS X related
-.DS_Store
+# Jekyll cache
+.jekyll-cache
+_site
 
-# Bower
+# RubyGems
+*.gem
+
+# NPM dependencies
 node_modules
-.tmp
-.sass-cache
-/.vscode
+package-lock.json
+
+# IDE configurations
+.idea
+.vscode
+
+# Misc
+assets/js/dist

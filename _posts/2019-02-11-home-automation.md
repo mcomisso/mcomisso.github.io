@@ -70,7 +70,7 @@ MQTT is a protocol designed to be fast and lightweight via publish/subscribe mec
 
 The esp runs this sketch
 
-{% gist da39e60125f9cec8a32fed857ce26175 %}
+<!-- {% gist da39e60125f9cec8a32fed857ce26175 %} -->
 
 
 ### Bridge to HomeKit
