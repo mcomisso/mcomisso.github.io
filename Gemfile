@@ -1,10 +1,11 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+# source "https://rubygems.org"
 
 gemspec
 
 group :jekyll_plugins do
+  gem "jekyll"
   gem "jekyll-compose"
   gem "jekyll-feed"
   gem "jekyll-include-cache"
