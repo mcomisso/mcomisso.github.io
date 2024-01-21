@@ -1,6 +1,6 @@
 ---
-layout: page
-title: What the score
+# layout: page
+# title: What the score
 description: A scorekeeper app!
 ---
 

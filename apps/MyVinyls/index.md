@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Vinyly
+# title: My Vinyls
 description: A fresh view on Discogs
 appId: 1547173908
 images:
@@ -27,4 +27,3 @@ images:
 
 ## [My Vinyls webpage](https://myvinyls.app)
 
-<a href="https://apps.apple.com/us/app/vinyly/id1547173908?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1613001600&h=b5f790a5f75a8aa8961bb3fc6a1f64b8" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>

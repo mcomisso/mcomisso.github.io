@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Resume
+# title: Resume
 description: Resume, Matteo Comisso
 ---
 
-# Working experience
+<!-- # Working experience -->
 
 **[YNAP (YOOX NET-A-PORTER group)](https://theoutnet.com), LONDON [NOV 2017 - CURRENT]**  
 I work on the iOS app **THE OUTNET**, the outlet app of YNAP. It has a worldwide user pool, with a various depth of features. I am a senior developer in a team of 4, I support the learning curve of juniors and coordination of tasks.

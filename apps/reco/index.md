@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Reco
+# layout: page
+# title: Reco
 description: Reco, a small 
 ---
 
